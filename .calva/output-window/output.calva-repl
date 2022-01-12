@@ -591,3 +591,46 @@ clj꞉butterfly.functions-primer꞉> 
  "[55 56]!!"
  "seven!!")
 clj꞉butterfly.functions-primer꞉> 
+; Syntax error macroexpanding clojure.core/defn at (functions-primer.clj:66:1).
+; [x] - failed: simple-symbol? at: [:fn-name] spec: :clojure.core.specs.alpha/defn-args
+clj꞉butterfly.functions-primer꞉> 
+#'butterfly.functions-primer/example
+clj꞉butterfly.functions-primer꞉> 
+[1 2 3]
+nil
+clj꞉butterfly.functions-primer꞉> 
+#'butterfly.functions-primer/returns-only-first
+clj꞉butterfly.functions-primer꞉> 
+#'butterfly.functions-primer/returns-only-first
+clj꞉butterfly.functions-primer꞉> 
+"1"
+clj꞉butterfly.functions-primer꞉> 
+#'butterfly.functions-primer/example
+clj꞉butterfly.functions-primer꞉> 
+"[1 2 3]"
+clj꞉butterfly.functions-primer꞉> 
+"1"
+clj꞉butterfly.functions-primer꞉> 
+#'butterfly.functions-primer/example-with-parallel-expressions
+clj꞉butterfly.functions-primer꞉> 
+first:  100
+second 22
+nil
+clj꞉butterfly.functions-primer꞉> 
+; Syntax error macroexpanding clojure.core/defn at (functions-primer.clj:95:1).
+; {:key1 key1, :key2 key2} - failed: vector? at: [:fn-tail :arity-n :bodies :params] spec: :clojure.core.specs.alpha/param-list
+({:key1 key1, :key2 key2}) - failed: Extra input at: [:fn-tail :arity-1 :params] spec: :clojure.core.specs.alpha/param-list
+clj꞉butterfly.functions-primer꞉> 
+; Syntax error macroexpanding clojure.core/defn at (functions-primer.clj:95:1).
+; {:key1 key1, :key2 key2} - failed: vector? at: [:fn-tail :arity-n :bodies :params] spec: :clojure.core.specs.alpha/param-list
+({:key1 key1, :key2 key2}) - failed: Extra input at: [:fn-tail :arity-1 :params] spec: :clojure.core.specs.alpha/param-list
+clj꞉butterfly.functions-primer꞉> 
+#'butterfly.functions-primer/variable-arity-function
+clj꞉butterfly.functions-primer꞉> 
+("1"
+ "Arguments: two"
+ "Arguments: 3"
+ "Arguments: 4"
+ "Arguments: [55 56]"
+ "Arguments: seven")
+clj꞉butterfly.functions-primer꞉> 

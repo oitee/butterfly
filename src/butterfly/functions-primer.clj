@@ -52,15 +52,49 @@
 
 ;; variable arities using rest parameters
 
-(defn another-one-arg-fn "this just returns the argument with a !"[x] (str x "!!"))
-
 (defn variable-arity-function
-  ;;([one-arg] (str "Arguments: " one-arg))
-  ([first-arg & rest-args] (conj (map another-one-arg-fn rest-args) first-arg)))
-
+  ([one-arg] (str "Arguments: " one-arg))
+  ([first-arg & rest-args] (conj (map variable-arity-function rest-args) first-arg)))
 
 
 (variable-arity-function "1" "two" 3 4 [55, 56] "seven")
+
+;; destructuring
+
+(defn example [x] (str x))
+;; here, we are not looking what the argument really is
+;; it could be a vector with n elements, or just a string or any other data structure or a function
+
+(example [1 2 3])
+;;=> "[1 2 3]"
+
+(defn returns-only-first [[first-element]] (str first-element))
+;; here, we say that the one-argument function will accept a vector
+;; and the first element will be called 'first-element'
+
+(returns-only-first [1 2 3 4])
+;; => "1"
+
+
+(defn example-with-parallel-expressions "To see if we can have multiple parallel forms within one function"
+  [x, y]
+  (println "first: " x)
+  (println "second" y))
+
+(example-with-parallel-expressions 100 "22")
+;; works! REPL:
+;; first:  100
+;; second 22
+;; nil
+
+
+;;destructuring maps
+
+(defn destructuring-maps "Trying out how destructuring works for hash-maps"
+  [{:key1 key1 :key2 key2}]
+  (println (str "Key1 value" key1)
+       (str "Key2 value" key2)))
+
 
 
 
