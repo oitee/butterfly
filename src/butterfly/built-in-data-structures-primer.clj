@@ -46,6 +46,15 @@ name-of-vector
 
 (conj my-vector "eight")
 
+(first my-vector)
+;; => 0
+
+(last my-vector)
+;; => {:key "seven"}
+
+(second my-vector)
+;;=> 1
+
 ;; lists
 
 `("zero" 1 2 "three")
