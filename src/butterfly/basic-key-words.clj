@@ -2,18 +2,23 @@
 
 (def a (+ 1 2 3))
 
+;; if-else statements
+
 (if true
   "True"
   "False")
 
 (if true (do
-      (str "True" "!") (+ 1 2 3)))
+           (def num 11) (+ 1 num 3)))
 
-(when true (do 
-             (str "When True!")
+(when true (do
+             (println "When True!")
              str "exit"))
 
+
 (= true nil)
+
+;;and or not
 
 (or true false)
 
@@ -22,4 +27,11 @@
 (and nil false true)
 
 (and true "Hi!" "Last")
+
+(def my-name "Otee")
+
+my-name
+
+
+
 

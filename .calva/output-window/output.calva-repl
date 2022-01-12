@@ -5,7 +5,7 @@
 ; Happy coding! ♥️
 
 ; Jacking in...
-; Starting Jack-in Terminal: lein update-in :dependencies conj '[nrepl,"0.8.3"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.26.0"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- repl :headless
+; Starting Jack-in Terminal: lein update-in :dependencies conj '[nrepl,"0.9.0"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.27.4"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- repl :headless
 ; Hooking up nREPL sessions...
 ; Connected session: clj
 ; TIPS: 
@@ -15,26 +15,236 @@
 ;   - `alt+up` and `alt+down` traverse up and down the REPL command history
 ;      when the cursor is after the last contents at the prompt
 ;   - Clojure lines in stack traces are peekable and clickable.
-clj꞉butterfly.core꞉>  ; Use `alt+enter` to evaluate
+clj꞉butterfly.core꞉> 
 ; Jack-in done.
 clj꞉butterfly.core꞉> 
-; Syntax error compiling at (new.clj:18:1).
-; Unable to resolve symbol: or in this context
-clj꞉butterfly.new꞉> 
 ; Evaluating file: new.clj
-"Last"
+; WARNING: name already refers to: #'clojure.core/name in namespace: butterfly.new, being replaced by: #'butterfly.new/name
+{:prop3 123, "prop2" "val2", :prop1 "val1"}
 clj꞉butterfly.new꞉> 
-true
+{:prop3 123,
+ "prop2" "val2",
+ :prop1 "val1"}
+clj꞉butterfly.new꞉> 
+#'butterfly.new/name
+clj꞉butterfly.new꞉> 
+"Otee"
 clj꞉butterfly.new꞉> 
 "exit"
 clj꞉butterfly.new꞉> 
-true
+"not found"
 clj꞉butterfly.new꞉> 
-false
+{:color "pink", :fruit "mango"}
+clj꞉butterfly.new꞉> 
+; Execution error (ArityException) at butterfly.new/eval7783 (form-init2860499862511255521.clj:35).
+; Wrong number of args (4) passed to: clojure.core/get
+clj꞉butterfly.new꞉> 
+"mango"
+clj꞉butterfly.new꞉> 
+; Syntax error compiling at (new.clj:1:7850).
+; Unable to resolve symbol: pink in this context
+; Syntax error reading source at (REPL:41:53).
+; Unmatched delimiter: )
+clj꞉butterfly.new꞉> 
+; Syntax error compiling at (new.clj:1:7850).
+; Unable to resolve symbol: pink in this context
+; Syntax error reading source at (REPL:41:53).
+; Unmatched delimiter: )
+clj꞉butterfly.new꞉> 
+; Syntax error compiling at (new.clj:1:7850).
+; Unable to resolve symbol: pink in this context
+; Syntax error reading source at (REPL:41:53).
+; Unmatched delimiter: )
+clj꞉butterfly.new꞉> 
+; WARNING: hash-map already refers to: #'clojure.core/hash-map in namespace: butterfly.new, being replaced by: #'butterfly.new/hash-map
+; Syntax error (IllegalStateException) compiling at (form-init2860499862511255521.clj:41:15).
+; Attempting to call unbound fn: #'butterfly.new/hash-map
+clj꞉butterfly.new꞉> 
+; Syntax error (IllegalStateException) compiling at (form-init2860499862511255521.clj:41:65).
+; Attempting to call unbound fn: #'butterfly.new/hash-map
+clj꞉butterfly.new꞉> 
+; Execution error (IllegalStateException) at butterfly.new/eval7787 (form-init2860499862511255521.clj:41).
+; Attempting to call unbound fn: #'butterfly.new/hash-map
+clj꞉butterfly.new꞉> 
+; Execution error (IllegalStateException) at butterfly.new/eval7789 (form-init2860499862511255521.clj:41).
+; Attempting to call unbound fn: #'butterfly.new/hash-map
+clj꞉butterfly.new꞉> 
+; Execution error (IllegalStateException) at butterfly.new/eval7791 (form-init2860499862511255521.clj:43).
+; Attempting to call unbound fn: #'butterfly.new/hash-map
+clj꞉butterfly.new꞉> 
+; Execution error (IllegalStateException) at butterfly.new/eval7793 (form-init2860499862511255521.clj:34).
+; Attempting to call unbound fn: #'butterfly.new/hash-map
+clj꞉butterfly.new꞉> 
+; Execution error (IllegalStateException) at butterfly.new/eval7795 (form-init2860499862511255521.clj:39).
+; Attempting to call unbound fn: #'butterfly.new/hash-map
+clj꞉butterfly.new꞉> 
+; Evaluating file: new.clj
+; WARNING: name already refers to: #'clojure.core/name in namespace: butterfly.new, being replaced by: #'butterfly.new/name
+{:parent "Plant"}
+clj꞉butterfly.new꞉> 
+#'butterfly.new/my-name
+clj꞉butterfly.new꞉> 
+"Otee"
+clj꞉butterfly.new꞉> 
+{:parent "Plant"}
+clj꞉butterfly.new꞉> 
+{:parent "Plant"}
+clj꞉butterfly.new꞉> 
+{:family {:parent "Plant"},
+ :color "pink",
+ :fruit "mango"}
+clj꞉butterfly.new꞉> 
+#'butterfly.new/my-hash-map
+clj꞉butterfly.new꞉> 
+{:family {:parent "Plant"},
+ :color "pink",
+ :fruit "mango"}
+clj꞉butterfly.new꞉> 
+#'butterfly.new/my-hash-map
+clj꞉butterfly.new꞉> 
+{:family {:parent "Plant"},
+ :color "pink",
+ :fruit "mango"}
+clj꞉butterfly.new꞉> 
+"Plant"
+clj꞉butterfly.new꞉> 
+"Plant"
+clj꞉butterfly.new꞉> 
+"pink"
 clj꞉butterfly.new꞉> 
 nil
 clj꞉butterfly.new꞉> 
-"Last"
+{:parent "Plant"}
 clj꞉butterfly.new꞉> 
-"Last"
+#'butterfly.new/my-hash-map
+clj꞉butterfly.new꞉> 
+{:parent "Plant",
+ :sibling "Another Mango"}
+clj꞉butterfly.new꞉> 
+nil
+clj꞉butterfly.new꞉> 
+{:parent "Plant",
+ :sibling "Another Mango"}
+clj꞉butterfly.new꞉> 
+"pink"
+clj꞉butterfly.new꞉> 
+{:parent "Plant",
+ :sibling "Another Mango"}
+clj꞉butterfly.new꞉> 
+{:parent "Plant",
+ :sibling "Another Mango"}
+clj꞉butterfly.new꞉> 
+#'butterfly.new/my-vector
+clj꞉butterfly.new꞉> 
+#'butterfly.new/my-vector
+clj꞉butterfly.new꞉> 
+5
+clj꞉butterfly.new꞉> 
+5
+clj꞉butterfly.new꞉> 
+"six"
+clj꞉butterfly.new꞉> 
+{:key "Val"}
+clj꞉butterfly.new꞉> 
+"Val"
+clj꞉butterfly.new꞉> 
+"Val"
+clj꞉butterfly.new꞉> 
+#'butterfly.new/my-vector
+clj꞉butterfly.new꞉> 
+"seven"
+clj꞉butterfly.new꞉> 
+{:key "seven"}
+clj꞉butterfly.new꞉> 
+nil
+clj꞉butterfly.new꞉> 
+"default"
+clj꞉butterfly.new꞉> 
+; Syntax error compiling at (new.clj:63:1).
+; Unable to resolve symbol: name-of-vector in this context
+clj꞉butterfly.new꞉> 
+["zero" "one" "two" 4]
+clj꞉butterfly.new꞉> 
+#'butterfly.new/name-of-vector
+clj꞉butterfly.new꞉> 
+["zero" "one" "two" 4]
+clj꞉butterfly.new꞉> 
+["zero" "one" "two" 4]
+clj꞉butterfly.new꞉> 
+#'butterfly.new/my-vector
+clj꞉butterfly.new꞉> 
+("zero" 1 2 "three")
+clj꞉butterfly.new꞉> 
+(0 1 2 "three" [4 5])
+clj꞉butterfly.new꞉> 
+#'butterfly.new/my-list
+clj꞉butterfly.new꞉> 
+(0 1 2 "three" [4 5])
+clj꞉butterfly.new꞉> 
+0
+clj꞉butterfly.new꞉> 
+[4 5]
+clj꞉butterfly.new꞉> 
+[4 5]
+clj꞉butterfly.new꞉> 
+"default"
+clj꞉butterfly.new꞉> 
+["zero" "one" "two" 4 "eight"]
+clj꞉butterfly.new꞉> 
+["zero" "one" "two" 4]
+clj꞉butterfly.new꞉> 
+("6" 0 1 2 "three" [4 5])
+clj꞉butterfly.new꞉> 
+("-1" 0 1 2 "three" [4 5])
+clj꞉butterfly.new꞉> 
+#'butterfly.new/name-of-vector
+clj꞉butterfly.new꞉> 
+["zero" "one" "two" 4]
+clj꞉butterfly.new꞉> 
+[0
+ 1
+ 2
+ 3
+ 4
+ 5
+ "six"
+ {:key "seven"}
+ "eight"]
+clj꞉butterfly.new꞉> 
+("zero" 1 2 "three")
+clj꞉butterfly.new꞉> 
+#'butterfly.new/my-list
+clj꞉butterfly.new꞉> 
+(0 1 2 "three" [4 5])
+clj꞉butterfly.new꞉> 
+"default"
+clj꞉butterfly.new꞉> 
+[4 5]
+clj꞉butterfly.new꞉> 
+("-1" 0 1 2 "three" [4 5])
+clj꞉butterfly.new꞉> 
+"exit"
+clj꞉butterfly.new꞉> 
+6
+clj꞉butterfly.new꞉> 
+15
+; WARNING: num already refers to: #'clojure.core/num in namespace: butterfly.new, being replaced by: #'butterfly.new/num
+clj꞉butterfly.new꞉> 
+When True!
+"exit"
+clj꞉butterfly.new꞉> 
+; Evaluating file: built-in-data-structures-basics.clj
+("-1" 0 1 2 "three" [4 5])
+clj꞉butterfly.built-in-data-structures-basics꞉> 
+("-1" 0 1 2 "three" [4 5])
+clj꞉butterfly.built-in-data-structures-basics꞉> 
+; Evaluating file: new.clj
+; WARNING: num already refers to: #'clojure.core/num in namespace: butterfly.new, being replaced by: #'butterfly.new/num
+When True!
+"Otee"
+clj꞉butterfly.new꞉> 
+; Evaluating file: basic-key-words.clj
+; WARNING: num already refers to: #'clojure.core/num in namespace: butterfly.new, being replaced by: #'butterfly.new/num
+When True!
+"Otee"
 clj꞉butterfly.new꞉> 
