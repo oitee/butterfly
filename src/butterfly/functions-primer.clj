@@ -91,10 +91,45 @@
 ;;destructuring maps
 
 (defn destructuring-maps "Trying out how destructuring works for hash-maps"
-  [{:key1 key1 :key2 key2}]
-  (println (str "Key1 value" key1)
-       (str "Key2 value" key2)))
+  [{key1 :key1 key2 :key2}]
+  (str (str "Key1 value " key1)
+       (str "Key2 value " key2)))
+
+(destructuring-maps {:key1 "Hello" :key2 "World"})
+;;=> "Key1 value HelloKey2 value World"
+
+(destructuring-maps {:key3 "!!"})
+;; => "Key1 value Key2 value "
 
 
+;; a function can have multiple forms
+;; but only the last (right-most) form will be returned
+
+(defn multiple-forms "A function with multiple forms"
+  []
+  (+ 12)
+  (str "Hello!")
+  "world")
+
+(multiple-forms)
+;; => "world"
+
+
+;; anonymous functions
+
+(map (fn [name] (str "My name is" name)) ["Alice" "Barbara" "Claire"])
+;; ("My name isAlice"
+;;  "My name isBarbara"
+;;   "My name isClaire")
+;; In the above example, (fn [name] (str "My name is " name)) is the anonymous function
+
+
+(#(str %1 "and" %2) "First " " Last")
+;; => "First and Last"
+;; This is a more compact way to write anonymous functions
+;; It is written similar to how functions are called
+
+(#(str %1 ", " %2 ", " %&) 1 2 3 4 5 5 6)
+;;=> "1, 2, (3 4 5 5 6)"
 
 

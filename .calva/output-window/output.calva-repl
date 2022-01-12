@@ -15,622 +15,87 @@
 ;   - `alt+up` and `alt+down` traverse up and down the REPL command history
 ;      when the cursor is after the last contents at the prompt
 ;   - Clojure lines in stack traces are peekable and clickable.
-clj꞉butterfly.core꞉> 
+clj꞉butterfly.core꞉>  ; Use `alt+enter` to evaluate
 ; Jack-in done.
 clj꞉butterfly.core꞉> 
-; Evaluating file: new.clj
-; WARNING: name already refers to: #'clojure.core/name in namespace: butterfly.new, being replaced by: #'butterfly.new/name
-{:prop3 123, "prop2" "val2", :prop1 "val1"}
-clj꞉butterfly.new꞉> 
-{:prop3 123,
- "prop2" "val2",
- :prop1 "val1"}
-clj꞉butterfly.new꞉> 
-#'butterfly.new/name
-clj꞉butterfly.new꞉> 
-"Otee"
-clj꞉butterfly.new꞉> 
-"exit"
-clj꞉butterfly.new꞉> 
-"not found"
-clj꞉butterfly.new꞉> 
-{:color "pink", :fruit "mango"}
-clj꞉butterfly.new꞉> 
-; Execution error (ArityException) at butterfly.new/eval7783 (form-init2860499862511255521.clj:35).
-; Wrong number of args (4) passed to: clojure.core/get
-clj꞉butterfly.new꞉> 
-"mango"
-clj꞉butterfly.new꞉> 
-; Syntax error compiling at (new.clj:1:7850).
-; Unable to resolve symbol: pink in this context
-; Syntax error reading source at (REPL:41:53).
-; Unmatched delimiter: )
-clj꞉butterfly.new꞉> 
-; Syntax error compiling at (new.clj:1:7850).
-; Unable to resolve symbol: pink in this context
-; Syntax error reading source at (REPL:41:53).
-; Unmatched delimiter: )
-clj꞉butterfly.new꞉> 
-; Syntax error compiling at (new.clj:1:7850).
-; Unable to resolve symbol: pink in this context
-; Syntax error reading source at (REPL:41:53).
-; Unmatched delimiter: )
-clj꞉butterfly.new꞉> 
-; WARNING: hash-map already refers to: #'clojure.core/hash-map in namespace: butterfly.new, being replaced by: #'butterfly.new/hash-map
-; Syntax error (IllegalStateException) compiling at (form-init2860499862511255521.clj:41:15).
-; Attempting to call unbound fn: #'butterfly.new/hash-map
-clj꞉butterfly.new꞉> 
-; Syntax error (IllegalStateException) compiling at (form-init2860499862511255521.clj:41:65).
-; Attempting to call unbound fn: #'butterfly.new/hash-map
-clj꞉butterfly.new꞉> 
-; Execution error (IllegalStateException) at butterfly.new/eval7787 (form-init2860499862511255521.clj:41).
-; Attempting to call unbound fn: #'butterfly.new/hash-map
-clj꞉butterfly.new꞉> 
-; Execution error (IllegalStateException) at butterfly.new/eval7789 (form-init2860499862511255521.clj:41).
-; Attempting to call unbound fn: #'butterfly.new/hash-map
-clj꞉butterfly.new꞉> 
-; Execution error (IllegalStateException) at butterfly.new/eval7791 (form-init2860499862511255521.clj:43).
-; Attempting to call unbound fn: #'butterfly.new/hash-map
-clj꞉butterfly.new꞉> 
-; Execution error (IllegalStateException) at butterfly.new/eval7793 (form-init2860499862511255521.clj:34).
-; Attempting to call unbound fn: #'butterfly.new/hash-map
-clj꞉butterfly.new꞉> 
-; Execution error (IllegalStateException) at butterfly.new/eval7795 (form-init2860499862511255521.clj:39).
-; Attempting to call unbound fn: #'butterfly.new/hash-map
-clj꞉butterfly.new꞉> 
-; Evaluating file: new.clj
-; WARNING: name already refers to: #'clojure.core/name in namespace: butterfly.new, being replaced by: #'butterfly.new/name
-{:parent "Plant"}
-clj꞉butterfly.new꞉> 
-#'butterfly.new/my-name
-clj꞉butterfly.new꞉> 
-"Otee"
-clj꞉butterfly.new꞉> 
-{:parent "Plant"}
-clj꞉butterfly.new꞉> 
-{:parent "Plant"}
-clj꞉butterfly.new꞉> 
-{:family {:parent "Plant"},
- :color "pink",
- :fruit "mango"}
-clj꞉butterfly.new꞉> 
-#'butterfly.new/my-hash-map
-clj꞉butterfly.new꞉> 
-{:family {:parent "Plant"},
- :color "pink",
- :fruit "mango"}
-clj꞉butterfly.new꞉> 
-#'butterfly.new/my-hash-map
-clj꞉butterfly.new꞉> 
-{:family {:parent "Plant"},
- :color "pink",
- :fruit "mango"}
-clj꞉butterfly.new꞉> 
-"Plant"
-clj꞉butterfly.new꞉> 
-"Plant"
-clj꞉butterfly.new꞉> 
-"pink"
-clj꞉butterfly.new꞉> 
-nil
-clj꞉butterfly.new꞉> 
-{:parent "Plant"}
-clj꞉butterfly.new꞉> 
-#'butterfly.new/my-hash-map
-clj꞉butterfly.new꞉> 
-{:parent "Plant",
- :sibling "Another Mango"}
-clj꞉butterfly.new꞉> 
-nil
-clj꞉butterfly.new꞉> 
-{:parent "Plant",
- :sibling "Another Mango"}
-clj꞉butterfly.new꞉> 
-"pink"
-clj꞉butterfly.new꞉> 
-{:parent "Plant",
- :sibling "Another Mango"}
-clj꞉butterfly.new꞉> 
-{:parent "Plant",
- :sibling "Another Mango"}
-clj꞉butterfly.new꞉> 
-#'butterfly.new/my-vector
-clj꞉butterfly.new꞉> 
-#'butterfly.new/my-vector
-clj꞉butterfly.new꞉> 
-5
-clj꞉butterfly.new꞉> 
-5
-clj꞉butterfly.new꞉> 
-"six"
-clj꞉butterfly.new꞉> 
-{:key "Val"}
-clj꞉butterfly.new꞉> 
-"Val"
-clj꞉butterfly.new꞉> 
-"Val"
-clj꞉butterfly.new꞉> 
-#'butterfly.new/my-vector
-clj꞉butterfly.new꞉> 
-"seven"
-clj꞉butterfly.new꞉> 
-{:key "seven"}
-clj꞉butterfly.new꞉> 
-nil
-clj꞉butterfly.new꞉> 
-"default"
-clj꞉butterfly.new꞉> 
-; Syntax error compiling at (new.clj:63:1).
-; Unable to resolve symbol: name-of-vector in this context
-clj꞉butterfly.new꞉> 
-["zero" "one" "two" 4]
-clj꞉butterfly.new꞉> 
-#'butterfly.new/name-of-vector
-clj꞉butterfly.new꞉> 
-["zero" "one" "two" 4]
-clj꞉butterfly.new꞉> 
-["zero" "one" "two" 4]
-clj꞉butterfly.new꞉> 
-#'butterfly.new/my-vector
-clj꞉butterfly.new꞉> 
-("zero" 1 2 "three")
-clj꞉butterfly.new꞉> 
-(0 1 2 "three" [4 5])
-clj꞉butterfly.new꞉> 
-#'butterfly.new/my-list
-clj꞉butterfly.new꞉> 
-(0 1 2 "three" [4 5])
-clj꞉butterfly.new꞉> 
-0
-clj꞉butterfly.new꞉> 
-[4 5]
-clj꞉butterfly.new꞉> 
-[4 5]
-clj꞉butterfly.new꞉> 
-"default"
-clj꞉butterfly.new꞉> 
-["zero" "one" "two" 4 "eight"]
-clj꞉butterfly.new꞉> 
-["zero" "one" "two" 4]
-clj꞉butterfly.new꞉> 
-("6" 0 1 2 "three" [4 5])
-clj꞉butterfly.new꞉> 
-("-1" 0 1 2 "three" [4 5])
-clj꞉butterfly.new꞉> 
-#'butterfly.new/name-of-vector
-clj꞉butterfly.new꞉> 
-["zero" "one" "two" 4]
-clj꞉butterfly.new꞉> 
-[0
- 1
- 2
- 3
- 4
- 5
- "six"
- {:key "seven"}
- "eight"]
-clj꞉butterfly.new꞉> 
-("zero" 1 2 "three")
-clj꞉butterfly.new꞉> 
-#'butterfly.new/my-list
-clj꞉butterfly.new꞉> 
-(0 1 2 "three" [4 5])
-clj꞉butterfly.new꞉> 
-"default"
-clj꞉butterfly.new꞉> 
-[4 5]
-clj꞉butterfly.new꞉> 
-("-1" 0 1 2 "three" [4 5])
-clj꞉butterfly.new꞉> 
-"exit"
-clj꞉butterfly.new꞉> 
-6
-clj꞉butterfly.new꞉> 
-15
-; WARNING: num already refers to: #'clojure.core/num in namespace: butterfly.new, being replaced by: #'butterfly.new/num
-clj꞉butterfly.new꞉> 
-When True!
-"exit"
-clj꞉butterfly.new꞉> 
-; Evaluating file: built-in-data-structures-basics.clj
-("-1" 0 1 2 "three" [4 5])
-clj꞉butterfly.built-in-data-structures-basics꞉> 
-("-1" 0 1 2 "three" [4 5])
-clj꞉butterfly.built-in-data-structures-basics꞉> 
-; Evaluating file: new.clj
-; WARNING: num already refers to: #'clojure.core/num in namespace: butterfly.new, being replaced by: #'butterfly.new/num
-When True!
-"Otee"
-clj꞉butterfly.new꞉> 
-; Evaluating file: basic-key-words.clj
-; WARNING: num already refers to: #'clojure.core/num in namespace: butterfly.new, being replaced by: #'butterfly.new/num
-When True!
-"Otee"
-clj꞉butterfly.new꞉> 
-#{1 "4" [5 6] 3 2}
-clj꞉butterfly.built-in-data-structures-basics꞉> 
-#{0 1 3 2 "four"}
-clj꞉butterfly.built-in-data-structures-basics꞉> 
-#'butterfly.built-in-data-structures-basics/my-set
-clj꞉butterfly.built-in-data-structures-basics꞉> 
-nil
-clj꞉butterfly.built-in-data-structures-basics꞉> 
-"four"
-clj꞉butterfly.built-in-data-structures-basics꞉> 
-nil
-clj꞉butterfly.built-in-data-structures-basics꞉> 
-true
-clj꞉butterfly.built-in-data-structures-basics꞉> 
-false
-clj꞉butterfly.built-in-data-structures-basics꞉> 
-; Execution error (ClassCastException) at butterfly.built-in-data-structures-basics/eval8077 (form-init2860499862511255521.clj:73).
-; class java.lang.String cannot be cast to class clojure.lang.IFn (java.lang.String is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
-clj꞉butterfly.built-in-data-structures-basics꞉> 
-#'butterfly.built-in-data-structures-basics/my-set
-clj꞉butterfly.built-in-data-structures-basics꞉> 
-:5
-clj꞉butterfly.built-in-data-structures-basics꞉> 
-nil
-clj꞉butterfly.built-in-data-structures-basics꞉> 
-nil
-clj꞉butterfly.built-in-data-structures-basics꞉> 
-nil
-clj꞉butterfly.built-in-data-structures-basics꞉> 
-#'butterfly.built-in-data-structures-basics/my-set
-clj꞉butterfly.built-in-data-structures-basics꞉> 
-"four"
-clj꞉butterfly.built-in-data-structures-basics꞉> 
-nil
-clj꞉butterfly.built-in-data-structures-basics꞉> 
-nil
-clj꞉butterfly.built-in-data-structures-basics꞉> 
-:5
-clj꞉butterfly.built-in-data-structures-basics꞉> 
-nil
-clj꞉butterfly.built-in-data-structures-basics꞉> 
-false
-clj꞉butterfly.built-in-data-structures-basics꞉> 
-true
-clj꞉butterfly.built-in-data-structures-basics꞉> 
-nil
-clj꞉butterfly.built-in-data-structures-basics꞉> 
-"four"
-clj꞉butterfly.built-in-data-structures-basics꞉> 
-#'butterfly.built-in-data-structures-basics/my-set
-clj꞉butterfly.built-in-data-structures-basics꞉> 
-#{1 "4" [5 6] 3 2}
-clj꞉butterfly.built-in-data-structures-basics꞉> 
-#{0 1 "eleventh hour" 3 2 :5 "four"}
-clj꞉butterfly.built-in-data-structures-basics꞉> 
-; Syntax error compiling at (built-in-data-structures-basics.clj:1:7850).
-; Unable to resolve symbol: my-new-set in this context
-clj꞉butterfly.built-in-data-structures-basics꞉> 
-#'butterfly.built-in-data-structures-basics/my-new-set
-clj꞉butterfly.built-in-data-structures-basics꞉> 
-true
-clj꞉butterfly.built-in-data-structures-basics꞉> 
-#'butterfly.built-in-data-structures-basics/my-set
-clj꞉butterfly.built-in-data-structures-basics꞉> 
-true
-clj꞉butterfly.built-in-data-structures-basics꞉> 
-true
-clj꞉butterfly.built-in-data-structures-basics꞉> 
-"eleventh hour"
-clj꞉butterfly.built-in-data-structures-basics꞉> 
-#'butterfly.built-in-data-structures-basics/my-set
-clj꞉butterfly.built-in-data-structures-basics꞉> 
-nil
-clj꞉butterfly.built-in-data-structures-basics꞉> 
-"Nah! Doesnt contain"
-clj꞉butterfly.built-in-data-structures-basics꞉> 
-{:prop1 "val1",
- "prop2" "val2",
- :prop3 12,
- "prop3" 14}
-clj꞉butterfly.built-in-data-structures-basics꞉> 
-nil
-clj꞉butterfly.built-in-data-structures-basics꞉> 
-#'butterfly.built-in-data-structures-basics/my-hash-map
-clj꞉butterfly.built-in-data-structures-basics꞉> 
-"yes"
-clj꞉butterfly.built-in-data-structures-basics꞉> 
 ; Evaluating file: functions-primer.clj
-nil
-clj꞉butterfly.functions-primer꞉> 
-; WARNING: num already refers to: #'clojure.core/num in namespace: butterfly.functions-primer, being replaced by: #'butterfly.functions-primer/num
-; Execution error (ClassCastException) at butterfly.functions-primer/eval8142 (form-init2860499862511255521.clj:3).
-; class java.lang.Long cannot be cast to class clojure.lang.IFn (java.lang.Long is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
-clj꞉butterfly.functions-primer꞉> 
-; Execution error (ClassCastException) at butterfly.functions-primer/eval8145 (form-init2860499862511255521.clj:3).
-; class java.lang.Long cannot be cast to class clojure.lang.IFn (java.lang.Long is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
-clj꞉butterfly.functions-primer꞉> 
-; Evaluating file: functions-primer.clj
-; Syntax error (ClassCastException) compiling at (functions-primer.clj:3:1).
-; class java.lang.Long cannot be cast to class clojure.lang.IFn (java.lang.Long is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
-; Evaluation of file functions-primer.clj failed: class clojure.lang.Compiler$CompilerException
-
-clj꞉butterfly.functions-primer꞉> 
-clj꞉butterfly.functions-primer꞉> 
-#'butterfly.functions-primer/num1
-clj꞉butterfly.functions-primer꞉> 
-; Execution error (ClassCastException) at butterfly.functions-primer/eval8166 (form-init2860499862511255521.clj:3).
-; class clojure.lang.Var cannot be cast to class java.lang.Number (clojure.lang.Var is in unnamed module of loader 'app'; java.lang.Number is in module java.base of loader 'bootstrap')
-clj꞉butterfly.functions-primer꞉> 
-#'butterfly.functions-primer/num2
-clj꞉butterfly.functions-primer꞉> 
-23
-clj꞉butterfly.functions-primer꞉> 
-23
-clj꞉butterfly.functions-primer꞉> 
-23
-clj꞉butterfly.functions-primer꞉> 
-23
-clj꞉butterfly.functions-primer꞉> 
-23
-clj꞉butterfly.functions-primer꞉> 
-23
-clj꞉butterfly.functions-primer꞉> 
-; Execution error (ClassCastException) at butterfly.functions-primer/eval8186 (form-init2860499862511255521.clj:9).
-; class java.lang.Boolean cannot be cast to class clojure.lang.IFn (java.lang.Boolean is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
-clj꞉butterfly.functions-primer꞉> 
--1
-clj꞉butterfly.functions-primer꞉> 
-0
-clj꞉butterfly.built-in-data-structures-basics꞉> 
-{:key "seven"}
-clj꞉butterfly.built-in-data-structures-basics꞉> 
-; Syntax error compiling at (built-in-data-structures-primer.clj:53:1).
-; Unable to resolve symbol: fourth in this context
-clj꞉butterfly.built-in-data-structures-basics꞉> 
-; Syntax error compiling at (built-in-data-structures-primer.clj:53:1).
-; Unable to resolve symbol: third in this context
-clj꞉butterfly.built-in-data-structures-basics꞉> 
-1
-clj꞉butterfly.built-in-data-structures-basics꞉> 
-{:key "seven"}
-clj꞉butterfly.built-in-data-structures-basics꞉> 
-0
-clj꞉butterfly.built-in-data-structures-basics꞉> 
-; Execution error (ClassCastException) at butterfly.functions-primer/eval8208 (form-init2860499862511255521.clj:3).
-; class java.lang.Long cannot be cast to class clojure.lang.IFn (java.lang.Long is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
-clj꞉butterfly.functions-primer꞉> 
-12
-clj꞉butterfly.functions-primer꞉> 
-; Execution error (ClassCastException) at butterfly.functions-primer/eval8213 (form-init2860499862511255521.clj:9).
-; class clojure.core$num cannot be cast to class java.lang.Number (clojure.core$num is in unnamed module of loader 'app'; java.lang.Number is in module java.base of loader 'bootstrap')
-clj꞉butterfly.functions-primer꞉> 
-23
-clj꞉butterfly.functions-primer꞉> 
-12
-clj꞉butterfly.functions-primer꞉> 
-201
-clj꞉butterfly.functions-primer꞉> 
-1
-clj꞉butterfly.functions-primer꞉> 
-12
-clj꞉butterfly.functions-primer꞉> 
-190
-clj꞉butterfly.functions-primer꞉> 
-12
-clj꞉butterfly.functions-primer꞉> 
-1
-clj꞉butterfly.functions-primer꞉> 
--11
-clj꞉butterfly.functions-primer꞉> 
-201
-clj꞉butterfly.functions-primer꞉> 
-1
-clj꞉butterfly.functions-primer꞉> 
-1
-clj꞉butterfly.functions-primer꞉> 
-12
-clj꞉butterfly.functions-primer꞉> 
--11
-clj꞉butterfly.functions-primer꞉> 
-1
-clj꞉butterfly.functions-primer꞉> 
-12
-clj꞉butterfly.functions-primer꞉> 
--11
-clj꞉butterfly.functions-primer꞉> 
-1
-clj꞉butterfly.functions-primer꞉> 
-12
-clj꞉butterfly.functions-primer꞉> 
--11
-clj꞉butterfly.functions-primer꞉> 
--11
-clj꞉butterfly.functions-primer꞉> 
-12
-clj꞉butterfly.functions-primer꞉> 
--11
-clj꞉butterfly.functions-primer꞉> 
-1
-clj꞉butterfly.functions-primer꞉> 
--11
-clj꞉butterfly.functions-primer꞉> 
-190
-clj꞉butterfly.functions-primer꞉> 
-189
-clj꞉butterfly.functions-primer꞉> 
-189
-clj꞉butterfly.functions-primer꞉> 
-189
-clj꞉butterfly.functions-primer꞉> 
-189
-clj꞉butterfly.functions-primer꞉> 
-; Syntax error compiling at (functions-primer.clj:35:1).
-; Unable to resolve symbol: x in this context
-clj꞉butterfly.functions-primer꞉> 
-#'butterfly.functions-primer/multiple-args-function
-clj꞉butterfly.functions-primer꞉> 
-11
-clj꞉butterfly.functions-primer꞉> 
-#'butterfly.functions-primer/multiple-args-function
-clj꞉butterfly.functions-primer꞉> 
-"One argument function body; argument passed:11"
-clj꞉butterfly.functions-primer꞉> 
-"Zero Argument function body"
-clj꞉butterfly.functions-primer꞉> 
-; Syntax error compiling at (functions-primer.clj:41:3).
-; Unable to resolve symbol: x in this context
-clj꞉butterfly.functions-primer꞉> 
-; Syntax error compiling at (functions-primer.clj:41:3).
-; Unable to resolve symbol: a in this context
-clj꞉butterfly.functions-primer꞉> 
-; Syntax error compiling at (functions-primer.clj:41:3).
-; Unable to resolve symbol: a in this context
-clj꞉butterfly.functions-primer꞉> 
-; Syntax error compiling at (functions-primer.clj:41:3).
-; Unable to resolve symbol: a in this context
-clj꞉butterfly.functions-primer꞉> 
-; Evaluating file: functions-primer.clj
-; Syntax error compiling fn* at (functions-primer.clj:35:1).
-; Can't have 2 overloads with same arity
-; Evaluation of file functions-primer.clj failed: class clojure.lang.Compiler$CompilerException
-
-clj꞉butterfly.functions-primer꞉> 
-clj꞉butterfly.functions-primer꞉> 
-; Syntax error compiling at (functions-primer.clj:41:3).
-; Unable to resolve symbol: a in this context
-clj꞉butterfly.functions-primer꞉> 
-#'butterfly.functions-primer/multiple-args-function
-clj꞉butterfly.functions-primer꞉> 
-#'butterfly.functions-primer/multiple-args-function
-clj꞉butterfly.functions-primer꞉> 
-#'butterfly.functions-primer/multiple-args-function
-clj꞉butterfly.functions-primer꞉> 
-; Execution error (ArityException) at butterfly.functions-primer/eval8319 (form-init2860499862511255521.clj:43).
-; Wrong number of args (3) passed to: butterfly.functions-primer/multiple-args-function
-clj꞉butterfly.functions-primer꞉> 
-"Two argument function; arguments:12"
-clj꞉butterfly.functions-primer꞉> 
-"Zero Argument function body"
-clj꞉butterfly.functions-primer꞉> 
-"One argument function body; argument passed:1"
-clj꞉butterfly.functions-primer꞉> 
-"Two argument function; arguments:12"
-clj꞉butterfly.functions-primer꞉> 
-#'butterfly.functions-primer/multiple-args-function
-clj꞉butterfly.functions-primer꞉> 
-"Zero Argument function body"
-clj꞉butterfly.functions-primer꞉> 
-; Syntax error compiling at (functions-primer.clj:56:3).
-; Unable to resolve symbol: one-arg in this context
-clj꞉butterfly.functions-primer꞉> 
-; Syntax error compiling at (functions-primer.clj:57:50).
-; Unable to resolve symbol: rest-args in this context
-clj꞉butterfly.functions-primer꞉> 
-#'butterfly.functions-primer/variable-arity-function
-clj꞉butterfly.functions-primer꞉> 
-"First argument:1clojure.lang.LazySeq@df219d26"
-clj꞉butterfly.functions-primer꞉> 
-"First argument:1clojure.lang.LazySeq@df219d26"
-clj꞉butterfly.functions-primer꞉> 
-#'butterfly.functions-primer/variable-arity-function
-clj꞉butterfly.functions-primer꞉> 
-; Execution error (ClassCastException) at butterfly.functions-primer/variable-arity-function (form-init2860499862511255521.clj:58).
-; class java.lang.String cannot be cast to class clojure.lang.IFn (java.lang.String is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
-clj꞉butterfly.functions-primer꞉> 
-#'butterfly.functions-primer/variable-arity-function
-clj꞉butterfly.functions-primer꞉> 
-#'butterfly.functions-primer/variable-arity-function
-clj꞉butterfly.functions-primer꞉> 
-; Execution error (ClassCastException) at butterfly.functions-primer/variable-arity-function (form-init2860499862511255521.clj:58).
-; class java.lang.String cannot be cast to class clojure.lang.IFn (java.lang.String is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
-clj꞉butterfly.functions-primer꞉> 
-; Evaluating file: functions-primer.clj
-; Syntax error (ClassCastException) compiling at (functions-primer.clj:60:1).
-; class java.lang.String cannot be cast to class clojure.lang.IFn (java.lang.String is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
-; Evaluation of file functions-primer.clj failed: class clojure.lang.Compiler$CompilerException
-
-clj꞉butterfly.functions-primer꞉> 
-clj꞉butterfly.functions-primer꞉> 
-; Execution error (ClassCastException) at butterfly.functions-primer/variable-arity-function (functions-primer.clj:58).
-; class java.lang.String cannot be cast to class clojure.lang.IFn (java.lang.String is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
-clj꞉butterfly.functions-primer꞉> 
-; Syntax error compiling fn* at (functions-primer.clj:55:1).
-; Can't have fixed arity function with more params than variadic function
-clj꞉butterfly.functions-primer꞉> 
-; Syntax error compiling fn* at (functions-primer.clj:55:1).
-; Can't have fixed arity function with more params than variadic function
-clj꞉butterfly.functions-primer꞉> 
-#'butterfly.functions-primer/variable-arity-function
-clj꞉butterfly.functions-primer꞉> 
-("One argument function body; argument passed:1"
- "One argument function body; argument passed:two"
- "One argument function body; argument passed:3"
- "One argument function body; argument passed:4"
- "One argument function body; argument passed:[55 56]"
- "One argument function body; argument passed:seven")
-clj꞉butterfly.functions-primer꞉> 
-#'butterfly.functions-primer/variable-arity-function
-clj꞉butterfly.functions-primer꞉> 
-("1"
- "One argument function body; argument passed:two"
- "One argument function body; argument passed:3"
- "One argument function body; argument passed:4"
- "One argument function body; argument passed:[55 56]"
- "One argument function body; argument passed:seven")
-clj꞉butterfly.functions-primer꞉> 
-#'butterfly.functions-primer/another-one-arg-fn
-clj꞉butterfly.functions-primer꞉> 
-#'butterfly.functions-primer/variable-arity-function
-clj꞉butterfly.functions-primer꞉> 
-("1" "two" "3" "4" "[55 56]" "seven")
-clj꞉butterfly.functions-primer꞉> 
-#'butterfly.functions-primer/another-one-arg-fn
-clj꞉butterfly.functions-primer꞉> 
-#'butterfly.functions-primer/variable-arity-function
-clj꞉butterfly.functions-primer꞉> 
-("1"
- "two!!"
- "3!!"
- "4!!"
- "[55 56]!!"
- "seven!!")
-clj꞉butterfly.functions-primer꞉> 
-; Syntax error macroexpanding clojure.core/defn at (functions-primer.clj:66:1).
-; [x] - failed: simple-symbol? at: [:fn-name] spec: :clojure.core.specs.alpha/defn-args
-clj꞉butterfly.functions-primer꞉> 
-#'butterfly.functions-primer/example
-clj꞉butterfly.functions-primer꞉> 
-[1 2 3]
-nil
-clj꞉butterfly.functions-primer꞉> 
-#'butterfly.functions-primer/returns-only-first
-clj꞉butterfly.functions-primer꞉> 
-#'butterfly.functions-primer/returns-only-first
-clj꞉butterfly.functions-primer꞉> 
-"1"
-clj꞉butterfly.functions-primer꞉> 
-#'butterfly.functions-primer/example
-clj꞉butterfly.functions-primer꞉> 
-"[1 2 3]"
-clj꞉butterfly.functions-primer꞉> 
-"1"
-clj꞉butterfly.functions-primer꞉> 
-#'butterfly.functions-primer/example-with-parallel-expressions
-clj꞉butterfly.functions-primer꞉> 
 first:  100
 second 22
+; Syntax error macroexpanding clojure.core/defn at (functions-primer.clj:93:1).
+; {:key1 key1, :key2 key2} - failed: vector? at: [:fn-tail :arity-n :bodies :params] spec: :clojure.core.specs.alpha/param-list
+({:key1 key1, :key2 key2}) - failed: Extra input at: [:fn-tail :arity-1 :params] spec: :clojure.core.specs.alpha/param-list
+; Evaluation of file functions-primer.clj failed: class clojure.lang.Compiler$CompilerException
+
+clj꞉butterfly.core꞉> 
+clj꞉butterfly.functions-primer꞉> 
+; Evaluating file: functions-primer.clj
+first:  100
+second 22
+; Syntax error macroexpanding clojure.core/defn at (functions-primer.clj:93:1).
+; {:key1 key1, :key2 key2} - failed: vector? at: [:fn-tail :arity-n :bodies :params] spec: :clojure.core.specs.alpha/param-list
+({:key1 key1, :key2 key2}) - failed: Extra input at: [:fn-tail :arity-1 :params] spec: :clojure.core.specs.alpha/param-list
+; Evaluation of file functions-primer.clj failed: class clojure.lang.Compiler$CompilerException
+
+clj꞉butterfly.functions-primer꞉> 
+clj꞉butterfly.functions-primer꞉> 
+; Syntax error macroexpanding clojure.core/defn at (functions-primer.clj:93:1).
+; {:key1 key1, :key2 key2} - failed: vector? at: [:fn-tail :arity-n :bodies :params] spec: :clojure.core.specs.alpha/param-list
+({:key1 key1, :key2 key2}) - failed: Extra input at: [:fn-tail :arity-1 :params] spec: :clojure.core.specs.alpha/param-list
+clj꞉butterfly.functions-primer꞉> 
+; Syntax error macroexpanding clojure.core/defn at (functions-primer.clj:93:1).
+; {:key1 key1, :key2 key2} - failed: vector? at: [:fn-tail :arity-n :bodies :params] spec: :clojure.core.specs.alpha/param-list
+({:key1 key1, :key2 key2}) - failed: Extra input at: [:fn-tail :arity-1 :params] spec: :clojure.core.specs.alpha/param-list
+clj꞉butterfly.functions-primer꞉> 
+; Syntax error macroexpanding clojure.core/defn at (functions-primer.clj:93:1).
+; {:key1 key1, :key2 key2} - failed: vector? at: [:fn-tail :arity-n :bodies :params] spec: :clojure.core.specs.alpha/param-list
+({:key1 key1, :key2 key2}) - failed: Extra input at: [:fn-tail :arity-1 :params] spec: :clojure.core.specs.alpha/param-list
+clj꞉butterfly.functions-primer꞉> 
+#'butterfly.functions-primer/destructuring-maps
+clj꞉butterfly.functions-primer꞉> 
+Key1 valueHello Key2 valueWorld
 nil
 clj꞉butterfly.functions-primer꞉> 
-; Syntax error macroexpanding clojure.core/defn at (functions-primer.clj:95:1).
-; {:key1 key1, :key2 key2} - failed: vector? at: [:fn-tail :arity-n :bodies :params] spec: :clojure.core.specs.alpha/param-list
-({:key1 key1, :key2 key2}) - failed: Extra input at: [:fn-tail :arity-1 :params] spec: :clojure.core.specs.alpha/param-list
+#'butterfly.functions-primer/destructuring-maps
 clj꞉butterfly.functions-primer꞉> 
-; Syntax error macroexpanding clojure.core/defn at (functions-primer.clj:95:1).
-; {:key1 key1, :key2 key2} - failed: vector? at: [:fn-tail :arity-n :bodies :params] spec: :clojure.core.specs.alpha/param-list
-({:key1 key1, :key2 key2}) - failed: Extra input at: [:fn-tail :arity-1 :params] spec: :clojure.core.specs.alpha/param-list
+"Key1 valueHelloKey2 valueWorld"
 clj꞉butterfly.functions-primer꞉> 
-#'butterfly.functions-primer/variable-arity-function
+#'butterfly.functions-primer/destructuring-maps
 clj꞉butterfly.functions-primer꞉> 
-("1"
- "Arguments: two"
- "Arguments: 3"
- "Arguments: 4"
- "Arguments: [55 56]"
- "Arguments: seven")
+"Key1 valueHello\nKey2 value World"
+clj꞉butterfly.functions-primer꞉> 
+#'butterfly.functions-primer/destructuring-maps
+clj꞉butterfly.functions-primer꞉> 
+"Key1 value HelloKey2 value World"
+clj꞉butterfly.functions-primer꞉> 
+"Key1 value Key2 value "
+clj꞉butterfly.functions-primer꞉> 
+#'butterfly.functions-primer/multiple-forms
+clj꞉butterfly.functions-primer꞉> 
+#function[butterfly.functions-primer/multiple-forms]
+clj꞉butterfly.functions-primer꞉> 
+"world"
+clj꞉butterfly.functions-primer꞉> 
+("My name isAlice"
+ "My name isBarbara"
+ "My name isClaire")
+clj꞉butterfly.functions-primer꞉> 
+"FirstandLast"
+clj꞉butterfly.functions-primer꞉> 
+"First and Last"
+clj꞉butterfly.functions-primer꞉> 
+; Execution error (ArityException) at butterfly.functions_primer$eval7898$fn__7899/doInvoke (form-init6318356808944250976.clj:132).
+; Wrong number of args (3) passed to: clojure.core/identity
+clj꞉butterfly.functions-primer꞉> 
+; Execution error (ArityException) at butterfly.functions_primer$eval7908$fn__7909/doInvoke (form-init6318356808944250976.clj:132).
+; Wrong number of args (3) passed to: clojure.core/identity
+clj꞉butterfly.functions-primer꞉> 
+"12(3 4 5 5 \"fifty\")"
+clj꞉butterfly.functions-primer꞉> 
+"12(3 4 5 5 6)"
+clj꞉butterfly.functions-primer꞉> 
+"1, 2, (3 4 5 5 6)"
+clj꞉butterfly.functions-primer꞉> 
+(0 1)
+clj꞉butterfly.functions-primer꞉> 
+(0 1 2 3)
 clj꞉butterfly.functions-primer꞉> 
