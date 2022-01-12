@@ -248,3 +248,90 @@ clj꞉butterfly.new꞉> 
 When True!
 "Otee"
 clj꞉butterfly.new꞉> 
+#{1 "4" [5 6] 3 2}
+clj꞉butterfly.built-in-data-structures-basics꞉> 
+#{0 1 3 2 "four"}
+clj꞉butterfly.built-in-data-structures-basics꞉> 
+#'butterfly.built-in-data-structures-basics/my-set
+clj꞉butterfly.built-in-data-structures-basics꞉> 
+nil
+clj꞉butterfly.built-in-data-structures-basics꞉> 
+"four"
+clj꞉butterfly.built-in-data-structures-basics꞉> 
+nil
+clj꞉butterfly.built-in-data-structures-basics꞉> 
+true
+clj꞉butterfly.built-in-data-structures-basics꞉> 
+false
+clj꞉butterfly.built-in-data-structures-basics꞉> 
+; Execution error (ClassCastException) at butterfly.built-in-data-structures-basics/eval8077 (form-init2860499862511255521.clj:73).
+; class java.lang.String cannot be cast to class clojure.lang.IFn (java.lang.String is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉butterfly.built-in-data-structures-basics꞉> 
+#'butterfly.built-in-data-structures-basics/my-set
+clj꞉butterfly.built-in-data-structures-basics꞉> 
+:5
+clj꞉butterfly.built-in-data-structures-basics꞉> 
+nil
+clj꞉butterfly.built-in-data-structures-basics꞉> 
+nil
+clj꞉butterfly.built-in-data-structures-basics꞉> 
+nil
+clj꞉butterfly.built-in-data-structures-basics꞉> 
+#'butterfly.built-in-data-structures-basics/my-set
+clj꞉butterfly.built-in-data-structures-basics꞉> 
+"four"
+clj꞉butterfly.built-in-data-structures-basics꞉> 
+nil
+clj꞉butterfly.built-in-data-structures-basics꞉> 
+nil
+clj꞉butterfly.built-in-data-structures-basics꞉> 
+:5
+clj꞉butterfly.built-in-data-structures-basics꞉> 
+nil
+clj꞉butterfly.built-in-data-structures-basics꞉> 
+false
+clj꞉butterfly.built-in-data-structures-basics꞉> 
+true
+clj꞉butterfly.built-in-data-structures-basics꞉> 
+nil
+clj꞉butterfly.built-in-data-structures-basics꞉> 
+"four"
+clj꞉butterfly.built-in-data-structures-basics꞉> 
+#'butterfly.built-in-data-structures-basics/my-set
+clj꞉butterfly.built-in-data-structures-basics꞉> 
+#{1 "4" [5 6] 3 2}
+clj꞉butterfly.built-in-data-structures-basics꞉> 
+#{0 1 "eleventh hour" 3 2 :5 "four"}
+clj꞉butterfly.built-in-data-structures-basics꞉> 
+; Syntax error compiling at (built-in-data-structures-basics.clj:1:7850).
+; Unable to resolve symbol: my-new-set in this context
+clj꞉butterfly.built-in-data-structures-basics꞉> 
+#'butterfly.built-in-data-structures-basics/my-new-set
+clj꞉butterfly.built-in-data-structures-basics꞉> 
+true
+clj꞉butterfly.built-in-data-structures-basics꞉> 
+#'butterfly.built-in-data-structures-basics/my-set
+clj꞉butterfly.built-in-data-structures-basics꞉> 
+true
+clj꞉butterfly.built-in-data-structures-basics꞉> 
+true
+clj꞉butterfly.built-in-data-structures-basics꞉> 
+"eleventh hour"
+clj꞉butterfly.built-in-data-structures-basics꞉> 
+#'butterfly.built-in-data-structures-basics/my-set
+clj꞉butterfly.built-in-data-structures-basics꞉> 
+nil
+clj꞉butterfly.built-in-data-structures-basics꞉> 
+"Nah! Doesnt contain"
+clj꞉butterfly.built-in-data-structures-basics꞉> 
+{:prop1 "val1",
+ "prop2" "val2",
+ :prop3 12,
+ "prop3" 14}
+clj꞉butterfly.built-in-data-structures-basics꞉> 
+nil
+clj꞉butterfly.built-in-data-structures-basics꞉> 
+#'butterfly.built-in-data-structures-basics/my-hash-map
+clj꞉butterfly.built-in-data-structures-basics꞉> 
+"yes"
+clj꞉butterfly.built-in-data-structures-basics꞉> 
