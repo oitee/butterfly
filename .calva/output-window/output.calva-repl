@@ -15,87 +15,130 @@
 ;   - `alt+up` and `alt+down` traverse up and down the REPL command history
 ;      when the cursor is after the last contents at the prompt
 ;   - Clojure lines in stack traces are peekable and clickable.
-clj꞉butterfly.core꞉>  ; Use `alt+enter` to evaluate
+clj꞉butterfly.core꞉> 
 ; Jack-in done.
 clj꞉butterfly.core꞉> 
-; Evaluating file: functions-primer.clj
-first:  100
-second 22
-; Syntax error macroexpanding clojure.core/defn at (functions-primer.clj:93:1).
-; {:key1 key1, :key2 key2} - failed: vector? at: [:fn-tail :arity-n :bodies :params] spec: :clojure.core.specs.alpha/param-list
-({:key1 key1, :key2 key2}) - failed: Extra input at: [:fn-tail :arity-1 :params] spec: :clojure.core.specs.alpha/param-list
-; Evaluation of file functions-primer.clj failed: class clojure.lang.Compiler$CompilerException
+; Syntax error compiling at (let.clj:26:1).
+; Unable to resolve symbol: loop in this context
+clj꞉butterfly.let꞉> 
+; Syntax error compiling at (let.clj:26:1).
+; Unable to resolve symbol: loop in this context
+clj꞉butterfly.let꞉> 
+; Syntax error compiling at (let.clj:31:1).
+; Unable to resolve symbol: not in this context
+clj꞉butterfly.let꞉> 
+; Syntax error compiling at (let.clj:31:1).
+; Unable to resolve symbol: let in this context
+clj꞉butterfly.let꞉> 
+; Evaluating file: let.clj
+3
+Hello!
+Hello!
+Hello!
+Hello!
+Hello!
+Hello!
+Hello!
+End
+; Syntax error compiling if at (let.clj:27:3).
+; Too few arguments to if
+; Evaluation of file let.clj failed: class clojure.lang.Compiler$CompilerException
 
-clj꞉butterfly.core꞉> 
-clj꞉butterfly.functions-primer꞉> 
-; Evaluating file: functions-primer.clj
-first:  100
-second 22
-; Syntax error macroexpanding clojure.core/defn at (functions-primer.clj:93:1).
-; {:key1 key1, :key2 key2} - failed: vector? at: [:fn-tail :arity-n :bodies :params] spec: :clojure.core.specs.alpha/param-list
-({:key1 key1, :key2 key2}) - failed: Extra input at: [:fn-tail :arity-1 :params] spec: :clojure.core.specs.alpha/param-list
-; Evaluation of file functions-primer.clj failed: class clojure.lang.Compiler$CompilerException
-
-clj꞉butterfly.functions-primer꞉> 
-clj꞉butterfly.functions-primer꞉> 
-; Syntax error macroexpanding clojure.core/defn at (functions-primer.clj:93:1).
-; {:key1 key1, :key2 key2} - failed: vector? at: [:fn-tail :arity-n :bodies :params] spec: :clojure.core.specs.alpha/param-list
-({:key1 key1, :key2 key2}) - failed: Extra input at: [:fn-tail :arity-1 :params] spec: :clojure.core.specs.alpha/param-list
-clj꞉butterfly.functions-primer꞉> 
-; Syntax error macroexpanding clojure.core/defn at (functions-primer.clj:93:1).
-; {:key1 key1, :key2 key2} - failed: vector? at: [:fn-tail :arity-n :bodies :params] spec: :clojure.core.specs.alpha/param-list
-({:key1 key1, :key2 key2}) - failed: Extra input at: [:fn-tail :arity-1 :params] spec: :clojure.core.specs.alpha/param-list
-clj꞉butterfly.functions-primer꞉> 
-; Syntax error macroexpanding clojure.core/defn at (functions-primer.clj:93:1).
-; {:key1 key1, :key2 key2} - failed: vector? at: [:fn-tail :arity-n :bodies :params] spec: :clojure.core.specs.alpha/param-list
-({:key1 key1, :key2 key2}) - failed: Extra input at: [:fn-tail :arity-1 :params] spec: :clojure.core.specs.alpha/param-list
-clj꞉butterfly.functions-primer꞉> 
-#'butterfly.functions-primer/destructuring-maps
-clj꞉butterfly.functions-primer꞉> 
-Key1 valueHello Key2 valueWorld
+clj꞉butterfly.let꞉> 
+clj꞉butterfly.let꞉> 
+false
+clj꞉butterfly.let꞉> 
+; Syntax error compiling if at (let.clj:27:3).
+; Too few arguments to if
+clj꞉butterfly.let꞉> 
+; Syntax error compiling at (let.clj:27:7).
+; Unable to resolve symbol: i in this context
+clj꞉butterfly.let꞉> 
+; Syntax error compiling at (let.clj:1:7850).
+; Unable to resolve symbol: i in this context
+clj꞉butterfly.let꞉> 
+; Syntax error compiling if at (let.clj:27:3).
+; Too few arguments to if
+clj꞉butterfly.let꞉> 
+"End"
+clj꞉butterfly.let꞉> 
+#'butterfly.let/nap
+clj꞉butterfly.let꞉> 
+[2 3 4 5]
+clj꞉butterfly.let꞉> 
+#'butterfly.let/my-filter
+clj꞉butterfly.let꞉> 
+; Execution error (UnsupportedOperationException) at butterfly.let/my-filter (form-init2498771982002981678.clj:47).
+; count not supported on this type: Long
+clj꞉butterfly.let꞉> 
+#function[butterfly.let/eval7786/fn--7787]
+clj꞉butterfly.let꞉> 
+[-1 -11 0 33 100]
+clj꞉butterfly.let꞉> 
+; Execution error (UnsupportedOperationException) at butterfly.let/my-filter (form-init2498771982002981678.clj:47).
+; count not supported on this type: Long
+clj꞉butterfly.let꞉> 
+5
+clj꞉butterfly.let꞉> 
+4
+clj꞉butterfly.let꞉> 
+3
+clj꞉butterfly.let꞉> 
+2
+clj꞉butterfly.let꞉> 
+1
+clj꞉butterfly.let꞉> 
+0
+clj꞉butterfly.let꞉> 
+; Execution error (UnsupportedOperationException) at butterfly.let/my-filter (form-init2498771982002981678.clj:47).
+; count not supported on this type: Long
+clj꞉butterfly.let꞉> 
+#'butterfly.let/my-filter
+clj꞉butterfly.let꞉> 
+; Execution error (UnsupportedOperationException) at butterfly.let/my-filter (form-init2498771982002981678.clj:47).
+; count not supported on this type: Long
+clj꞉butterfly.let꞉> 
+(33 100)
+clj꞉butterfly.let꞉> 
+#'butterfly.let/my-filter
+clj꞉butterfly.let꞉> 
+[-1 -11 0 33 100]
+-11
+; Execution error (UnsupportedOperationException) at butterfly.let/my-filter (form-init2498771982002981678.clj:48).
+; count not supported on this type: Long
+clj꞉butterfly.let꞉> 
+#'butterfly.let/my-filter
+clj꞉butterfly.let꞉> 
+[-1 -11 0 33 100]
+(-11 0 33 100)
+(0 33 100)
+(33 100)
+(100)
 nil
-clj꞉butterfly.functions-primer꞉> 
-#'butterfly.functions-primer/destructuring-maps
-clj꞉butterfly.functions-primer꞉> 
-"Key1 valueHelloKey2 valueWorld"
-clj꞉butterfly.functions-primer꞉> 
-#'butterfly.functions-primer/destructuring-maps
-clj꞉butterfly.functions-primer꞉> 
-"Key1 valueHello\nKey2 value World"
-clj꞉butterfly.functions-primer꞉> 
-#'butterfly.functions-primer/destructuring-maps
-clj꞉butterfly.functions-primer꞉> 
-"Key1 value HelloKey2 value World"
-clj꞉butterfly.functions-primer꞉> 
-"Key1 value Key2 value "
-clj꞉butterfly.functions-primer꞉> 
-#'butterfly.functions-primer/multiple-forms
-clj꞉butterfly.functions-primer꞉> 
-#function[butterfly.functions-primer/multiple-forms]
-clj꞉butterfly.functions-primer꞉> 
-"world"
-clj꞉butterfly.functions-primer꞉> 
-("My name isAlice"
- "My name isBarbara"
- "My name isClaire")
-clj꞉butterfly.functions-primer꞉> 
-"FirstandLast"
-clj꞉butterfly.functions-primer꞉> 
-"First and Last"
-clj꞉butterfly.functions-primer꞉> 
-; Execution error (ArityException) at butterfly.functions_primer$eval7898$fn__7899/doInvoke (form-init6318356808944250976.clj:132).
-; Wrong number of args (3) passed to: clojure.core/identity
-clj꞉butterfly.functions-primer꞉> 
-; Execution error (ArityException) at butterfly.functions_primer$eval7908$fn__7909/doInvoke (form-init6318356808944250976.clj:132).
-; Wrong number of args (3) passed to: clojure.core/identity
-clj꞉butterfly.functions-primer꞉> 
-"12(3 4 5 5 \"fifty\")"
-clj꞉butterfly.functions-primer꞉> 
-"12(3 4 5 5 6)"
-clj꞉butterfly.functions-primer꞉> 
-"1, 2, (3 4 5 5 6)"
-clj꞉butterfly.functions-primer꞉> 
-(0 1)
-clj꞉butterfly.functions-primer꞉> 
-(0 1 2 3)
-clj꞉butterfly.functions-primer꞉> 
+[33 100]
+clj꞉butterfly.let꞉> 
+; Syntax error compiling at (let.clj:74:16).
+; Unable to resolve symbol: initial in this context
+clj꞉butterfly.let꞉> 
+#'butterfly.let/my-reduce
+clj꞉butterfly.let꞉> 
+; Execution error (ArityException) at butterfly.let/my-reduce (form-init2498771982002981678.clj:77).
+; Wrong number of args (2) passed to: clojure.core/inc
+clj꞉butterfly.let꞉> 
+21
+clj꞉butterfly.let꞉> 
+; Execution error (IllegalArgumentException) at butterfly.let/eval7860 (form-init2498771982002981678.clj:81).
+; Don't know how to create ISeq from: java.lang.Long
+clj꞉butterfly.let꞉> 
+21
+clj꞉butterfly.let꞉> 
+#'butterfly.let/my-reduce
+clj꞉butterfly.let꞉> 
+21
+clj꞉butterfly.let꞉> 
+21
+clj꞉butterfly.let꞉> 
+21
+clj꞉butterfly.let꞉> 
+21
+clj꞉butterfly.let꞉> 
