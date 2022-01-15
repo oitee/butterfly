@@ -335,3 +335,371 @@ clj꞉butterfly.sequence-abstraction꞉> 
 ; Evaluating file: sequence-abstraction.clj
 [2 3 4]
 clj꞉butterfly.sequence-abstraction꞉> 
+; Evaluating file: sequence-abstraction.clj
+; Syntax error (ClassCastException) compiling at (sequence-abstraction.clj:56:1).
+; class java.lang.String cannot be cast to class java.lang.Number (java.lang.String and java.lang.Number are in module java.base of loader 'bootstrap')
+; Evaluation of file sequence-abstraction.clj failed: class clojure.lang.Compiler$CompilerException
+
+clj꞉butterfly.sequence-abstraction꞉> 
+clj꞉butterfly.sequence-abstraction꞉> 
+; Execution error (ClassCastException) at butterfly.sequence-abstraction/eval8309 (form-init2498771982002981678.clj:56).
+; class java.lang.String cannot be cast to class java.lang.Number (java.lang.String and java.lang.Number are in module java.base of loader 'bootstrap')
+clj꞉butterfly.sequence-abstraction꞉> 
+("first"
+ "first"
+ "first"
+ "first"
+ "first"
+ "first"
+ "first"
+ "first"
+ "first"
+ "first"
+ "first"
+ "first")
+clj꞉butterfly.sequence-abstraction꞉> 
+("firstsecond"
+ "firstsecond"
+ "firstsecond"
+ "firstsecond"
+ "firstsecond"
+ "firstsecond"
+ "firstsecond"
+ "firstsecond"
+ "firstsecond"
+ "firstsecond"
+ "firstsecond"
+ "firstsecond")
+clj꞉butterfly.sequence-abstraction꞉> 
+("first second"
+ "first second"
+ "first second"
+ "first second"
+ "first second"
+ "first second"
+ "first second"
+ "first second"
+ "first second"
+ "first second"
+ "first second"
+ "first second")
+clj꞉butterfly.sequence-abstraction꞉> 
+(9 4 5 3 3 7 0 6 9 6)
+clj꞉butterfly.sequence-abstraction꞉> 
+(8 5 7 8 4 9 1 5 1 0)
+clj꞉butterfly.sequence-abstraction꞉> 
+(6 9 9 0 2 4 6 8 8 5)
+clj꞉butterfly.sequence-abstraction꞉> 
+(0 3 5 0 2 0 9 1 1 1)
+clj꞉butterfly.sequence-abstraction꞉> 
+(2 5 2 9 1 5 1 5 4 8)
+clj꞉butterfly.sequence-abstraction꞉> 
+; Syntax error compiling at (sequence-abstraction.clj:65:10).
+; Unable to resolve symbol: identiy in this context
+clj꞉butterfly.sequence-abstraction꞉> 
+; Execution error (IllegalArgumentException) at butterfly.sequence-abstraction/eval8338 (form-init2498771982002981678.clj:65).
+; Don't know how to create ISeq from: java.lang.Long
+clj꞉butterfly.sequence-abstraction꞉> 
+#{1 4 3 2 5}
+clj꞉butterfly.sequence-abstraction꞉> 
+; Syntax error compiling at (sequence-abstraction.clj:65:11).
+; Unable to resolve symbol: value in this context
+clj꞉butterfly.sequence-abstraction꞉> 
+; Syntax error compiling at (sequence-abstraction.clj:65:10).
+; Unable to resolve symbol: value in this context
+clj꞉butterfly.sequence-abstraction꞉> 
+; Syntax error compiling at (sequence-abstraction.clj:65:1).
+; Unable to resolve symbol: value in this context
+clj꞉butterfly.sequence-abstraction꞉> 
+[[:key "value"]]
+clj꞉butterfly.sequence-abstraction꞉> 
+; Execution error (IllegalArgumentException) at butterfly.sequence-abstraction/eval8347 (form-init2498771982002981678.clj:68).
+; Key must be integer
+clj꞉butterfly.sequence-abstraction꞉> 
+[1 2 3 4 5 5 1 2 3 4 5]
+clj꞉butterfly.sequence-abstraction꞉> 
+[1 2 3 4 5 5 1 2 3 4 5 5]
+clj꞉butterfly.sequence-abstraction꞉> 
+[1 2 3 4 5 6]
+clj꞉butterfly.sequence-abstraction꞉> 
+{:1 "one", :2 "two"}
+clj꞉butterfly.sequence-abstraction꞉> 
+{:1 "one", :2 "two", :3 "three"}
+clj꞉butterfly.sequence-abstraction꞉> 
+#'butterfly.sequence-abstraction/vector-converter
+clj꞉butterfly.sequence-abstraction꞉> 
+[1 2 3 4]
+clj꞉butterfly.sequence-abstraction꞉> 
+[1 4 3 2]
+clj꞉butterfly.sequence-abstraction꞉> 
+[[:1 "one"] [:2 "two"]]
+clj꞉butterfly.sequence-abstraction꞉> 
+#'butterfly.fpwd/filename
+clj꞉butterfly.fpwd꞉> 
+; Evaluating file: fpwd.clj
+#'butterfly.fpwd/filename
+clj꞉butterfly.fpwd꞉> 
+""
+clj꞉butterfly.fpwd꞉> 
+"Edward Cullen,10\nBella Swan,0\nCharlie Swan,0\nJacob Black,3\nCarlisle Cullen,6"
+clj꞉butterfly.fpwd꞉> 
+#'butterfly.fpwd/str->int
+clj꞉butterfly.fpwd꞉> 
+#'butterfly.fpwd/vamp-keys
+clj꞉butterfly.fpwd꞉> 
+#'butterfly.fpwd/str->int
+clj꞉butterfly.fpwd꞉> 
+#'butterfly.fpwd/conversions
+clj꞉butterfly.fpwd꞉> 
+#'butterfly.fpwd/convert
+clj꞉butterfly.fpwd꞉> 
+#'butterfly.fpwd/convert
+clj꞉butterfly.fpwd꞉> 
+#'butterfly.fpwd/parse
+clj꞉butterfly.fpwd꞉> 
+["suspects.csv"]
+clj꞉butterfly.fpwd꞉> 
+["Edward Cullen,10"
+ "Bella Swan,0"
+ "Charlie Swan,0"
+ "Jacob Black,3"
+ "Carlisle Cullen,6"]
+clj꞉butterfly.fpwd꞉> 
+#'butterfly.fpwd/parse
+clj꞉butterfly.fpwd꞉> 
+(["Edward Cullen" "10"]
+ ["Bella Swan" "0"]
+ ["Charlie Swan" "0"]
+ ["Jacob Black" "3"]
+ ["Carlisle Cullen" "6"])
+clj꞉butterfly.fpwd꞉> 
+(["Edward Cullen" "10"]
+ ["Bella Swan" "0"]
+ ["Charlie Swan" "0"]
+ ["Jacob Black" "3"]
+ ["Carlisle Cullen" "6"])
+clj꞉butterfly.fpwd꞉> 
+#'butterfly.fpwd/mapify
+clj꞉butterfly.fpwd꞉> 
+{:a 1}
+clj꞉butterfly.fpwd꞉> 
+(1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+ 10
+ 11
+ 12
+ 13
+ 14
+ 15
+ 16
+ 17
+ 18
+ 19
+ 20
+ 21
+ 22
+ 23
+ 24
+ 25
+ 26
+ 27
+ 28
+ 29
+ 30
+ 31
+ 32
+ 33
+ 34
+ 35
+ 36
+ 37
+ 38
+ 39
+ 40
+ 41
+ 42
+ 43
+ 44
+ 45
+ 46
+ 47
+ 48
+ 49
+ 50
+ ...)
+clj꞉butterfly.fpwd꞉> 
+({:name "Edward Cullen",
+  :glitter-index "10"}
+ {:name "Bella Swan",
+  :glitter-index "0"}
+ {:name "Charlie Swan",
+  :glitter-index "0"}
+ {:name "Jacob Black",
+  :glitter-index "3"}
+ {:name "Carlisle Cullen",
+  :glitter-index "6"})
+clj꞉butterfly.fpwd꞉> 
+({:name "Edward Cullen",
+  :glitter-index "10"}
+ {:name "Bella Swan",
+  :glitter-index "0"}
+ {:name "Charlie Swan",
+  :glitter-index "0"}
+ {:name "Jacob Black",
+  :glitter-index "3"}
+ {:name "Carlisle Cullen",
+  :glitter-index "6"})
+clj꞉butterfly.fpwd꞉> 
+([:a 1] [:b 2])
+clj꞉butterfly.fpwd꞉> 
+(#function[clojure.core/map/fn--5847]
+ #function[clojure.core/map/fn--5847]
+ #function[clojure.core/map/fn--5847]
+ #function[clojure.core/map/fn--5847]
+ #function[clojure.core/map/fn--5847])
+clj꞉butterfly.fpwd꞉> 
+(("Edward Cullen" 10)
+ ("Bella Swan" 0)
+ ("Charlie Swan" 0)
+ ("Jacob Black" 3)
+ ("Carlisle Cullen" 6))
+clj꞉butterfly.fpwd꞉> 
+{:a 1, :b 2, :c 3}
+clj꞉butterfly.fpwd꞉> 
+; Execution error (IllegalArgumentException) at butterfly.fpwd/eval8447 (form-init2498771982002981678.clj:64).
+; Don't know how to create ISeq from: clojure.lang.Keyword
+clj꞉butterfly.fpwd꞉> 
+{:a 1, :b 2, :c 3}
+clj꞉butterfly.fpwd꞉> 
+{:a 1, :b 2, :c 3, :d 4}
+clj꞉butterfly.fpwd꞉> 
+{}
+clj꞉butterfly.fpwd꞉> 
+{:b 2}
+clj꞉butterfly.fpwd꞉> 
+{:a 1, :b 2, :c 3, :d 4}
+clj꞉butterfly.fpwd꞉> 
+{:a 1, :b 2, :c 3, :d 4}
+clj꞉butterfly.fpwd꞉> 
+{:a 1, :b 2, :c 3, :d 4, :e 5}
+clj꞉butterfly.fpwd꞉> 
+#{1 3 2}
+clj꞉butterfly.fpwd꞉> 
+#{3 2}
+clj꞉butterfly.fpwd꞉> 
+; Execution error (ClassCastException) at butterfly.fpwd/eval8467 (form-init2498771982002981678.clj:78).
+; class clojure.lang.PersistentVector cannot be cast to class clojure.lang.IPersistentSet (clojure.lang.PersistentVector and clojure.lang.IPersistentSet are in unnamed module of loader 'app')
+clj꞉butterfly.fpwd꞉> 
+(["Edward Cullen" "10"]
+ ["Bella Swan" "0"]
+ ["Charlie Swan" "0"]
+ ["Jacob Black" "3"]
+ ["Carlisle Cullen" "6"])
+clj꞉butterfly.fpwd꞉> 
+#'butterfly.fpwd/example
+clj꞉butterfly.fpwd꞉> 
+#'butterfly.fpwd/example
+clj꞉butterfly.fpwd꞉> 
+[1 2 3 4 5 6]
+clj꞉butterfly.fpwd꞉> 
+#'butterfly.fpwd/example
+clj꞉butterfly.fpwd꞉> 
+{:a 1,
+ :b 2,
+ :c 3,
+ :d (4 5 6),
+ :arg1 [1 2 3 4 5 6]}
+clj꞉butterfly.fpwd꞉> 
+nil
+clj꞉butterfly.fpwd꞉> 
+{:a 1,
+ :b 2,
+ :c 3,
+ :d (4 5 6),
+ :arg1 [1 2 3 4 5 6]}
+clj꞉butterfly.fpwd꞉> 
+1
+clj꞉butterfly.fpwd꞉> 
+1
+clj꞉butterfly.fpwd꞉> 
+2
+clj꞉butterfly.fpwd꞉> 
+nil
+clj꞉butterfly.fpwd꞉> 
+1
+clj꞉butterfly.fpwd꞉> 
+{:a
+ (["Edward Cullen" "10"]
+  ["Bella Swan" "0"]
+  ["Charlie Swan" "0"]
+  ["Jacob Black" "3"]
+  ["Carlisle Cullen" "6"])}
+clj꞉butterfly.fpwd꞉> 
+#'butterfly.fpwd/mapify
+clj꞉butterfly.fpwd꞉> 
+({:name "Edward Cullen",
+  :glitter-index 10}
+ {:name "Bella Swan", :glitter-index 0}
+ {:name "Charlie Swan",
+  :glitter-index 0}
+ {:name "Jacob Black",
+  :glitter-index 3}
+ {:name "Carlisle Cullen",
+  :glitter-index 6})
+clj꞉butterfly.fpwd꞉> 
+#'butterfly.fpwd/mapify
+clj꞉butterfly.fpwd꞉> 
+(([:name "Edward Cullen"]
+  [:glitter-index "10"])
+ ([:name "Bella Swan"]
+  [:glitter-index "0"])
+ ([:name "Charlie Swan"]
+  [:glitter-index "0"])
+ ([:name "Jacob Black"]
+  [:glitter-index "3"])
+ ([:name "Carlisle Cullen"]
+  [:glitter-index "6"]))
+clj꞉butterfly.fpwd꞉> 
+#'butterfly.fpwd/mapify
+clj꞉butterfly.fpwd꞉> 
+({:name "Edward Cullen",
+  :glitter-index "10"}
+ {:name "Bella Swan",
+  :glitter-index "0"}
+ {:name "Charlie Swan",
+  :glitter-index "0"}
+ {:name "Jacob Black",
+  :glitter-index "3"}
+ {:name "Carlisle Cullen",
+  :glitter-index "6"})
+clj꞉butterfly.fpwd꞉> 
+({:name "Edward Cullen",
+  :glitter-index "10"}
+ {:name "Bella Swan",
+  :glitter-index "0"}
+ {:name "Charlie Swan",
+  :glitter-index "0"}
+ {:name "Jacob Black",
+  :glitter-index "3"}
+ {:name "Carlisle Cullen",
+  :glitter-index "6"})
+clj꞉butterfly.fpwd꞉> 
+#'butterfly.fpwd/mapify
+clj꞉butterfly.fpwd꞉> 
+({:name "Edward Cullen",
+  :glitter-index 10}
+ {:name "Bella Swan", :glitter-index 0}
+ {:name "Charlie Swan",
+  :glitter-index 0}
+ {:name "Jacob Black",
+  :glitter-index 3}
+ {:name "Carlisle Cullen",
+  :glitter-index 6})
+clj꞉butterfly.fpwd꞉> 
