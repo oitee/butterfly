@@ -42,3 +42,69 @@ clj꞉butterfly.sequence-abstraction꞉> 
 clj꞉butterfly.sequence-abstraction꞉> 
 [2 3 4]
 clj꞉butterfly.sequence-abstraction꞉> 
+#'butterfly.sequence-abstraction/map-using-reduce
+clj꞉butterfly.sequence-abstraction꞉> 
+#'butterfly.sequence-abstraction/arr
+clj꞉butterfly.sequence-abstraction꞉> 
+[2 3 4]
+clj꞉butterfly.sequence-abstraction꞉> 
+(4 2 3)
+clj꞉butterfly.sequence-abstraction꞉> 
+#'butterfly.sequence-abstraction/map-using-reduce
+clj꞉butterfly.sequence-abstraction꞉> 
+[2 3 4]
+clj꞉butterfly.sequence-abstraction꞉> 
+[2 3 4]
+clj꞉butterfly.sequence-abstraction꞉> 
+(2 3 4)
+clj꞉butterfly.sequence-abstraction꞉> 
+#'butterfly.sequence-abstraction/map-using-reduce
+clj꞉butterfly.sequence-abstraction꞉> 
+(2 3 4)
+clj꞉butterfly.sequence-abstraction꞉> 
+(2 3 4)
+clj꞉butterfly.sequence-abstraction꞉> 
+; Syntax error compiling at (sequence-abstraction.clj:69:6).
+; Unable to resolve symbol: filter-fn in this context
+clj꞉butterfly.sequence-abstraction꞉> 
+#'butterfly.sequence-abstraction/filter-using-reduce
+clj꞉butterfly.sequence-abstraction꞉> 
+[0 2 4 6 8]
+clj꞉butterfly.sequence-abstraction꞉> 
+[0 2 4 6 8]
+clj꞉butterfly.sequence-abstraction꞉> 
+#'butterfly.sequence-abstraction/filter-using-reduce
+clj꞉butterfly.sequence-abstraction꞉> 
+(0 2 4 6 8)
+clj꞉butterfly.sequence-abstraction꞉> 
+(0 2 4 6 8)
+clj꞉butterfly.sequence-abstraction꞉> 
+nil
+clj꞉butterfly.functions-primer꞉> 
+; Syntax error compiling at (sequence-abstraction.clj:77:1).
+; Unable to resolve symbol: even?' in this context
+clj꞉butterfly.sequence-abstraction꞉> 
+true
+clj꞉butterfly.sequence-abstraction꞉> 
+true
+nil
+clj꞉butterfly.sequence-abstraction꞉> 
+true
+nil
+clj꞉butterfly.sequence-abstraction꞉> 
+false
+nil
+clj꞉butterfly.sequence-abstraction꞉> 
+#'butterfly.sequence-abstraction/some-using-reduce
+clj꞉butterfly.sequence-abstraction꞉> 
+nil
+clj꞉butterfly.sequence-abstraction꞉> 
+; Execution error (IllegalArgumentException) at butterfly.sequence-abstraction/some-using-reduce (form-init474683499762161802.clj:78).
+; Don't know how to create ISeq from: java.lang.Boolean
+clj꞉butterfly.sequence-abstraction꞉> 
+#'butterfly.sequence-abstraction/some-using-reduce
+clj꞉butterfly.sequence-abstraction꞉> 
+nil
+clj꞉butterfly.sequence-abstraction꞉> 
+true
+clj꞉butterfly.sequence-abstraction꞉> 

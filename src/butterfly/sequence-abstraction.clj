@@ -41,11 +41,11 @@
 
 (defn map-using-reduce
   [map-f xs]
-  (reduce (fn f
-            [aggregator new-val]
-            (conj (vec aggregator) (map-f new-val)))
-          (empty xs) 
-          xs))
+  (seq (reduce (fn f
+                 [aggregator new-val]
+                 (conj (vec aggregator) (map-f new-val)))
+               (empty xs)
+               xs)))
 
 
 (def arr [1 2 3])
@@ -61,13 +61,36 @@
 
 (defn filter-using-reduce
   [filter-fn xs]
-  (reduce ))
+  (seq (reduce (fn
+                 [aggregator new-val]
+                 (if (filter-fn new-val)
+                   (conj (vec aggregator) new-val)
+                   aggregator))
+               (empty xs)
+               xs)))
+
+(filter-using-reduce even? (take 10 (range)))
+(filter-using-reduce even? (take 10 (range)))
 
 
-(fn 
-  [aggregator new-val]
-  (if(filter-fn new-val)
-   (conj )))
+(defn some-using-reduce
+  [some-fn xs]
+   (reduce (fn [aggregator new-val]
+                  (if-not aggregator
+                    (if (some-fn new-val)
+                      (some-fn new-val)
+                      aggregator)
+                    aggregator))
+                nil
+                xs))
+
+(some even? [1 3 5 7])
+(some-using-reduce even? [1 3 5 7 9])
+(some-using-reduce even? '(1 3 5 7 8))
+(some even? '(1 3 5 7 8))
+
+
+
 
 
 ;;lazy sequence
