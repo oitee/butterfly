@@ -43,16 +43,31 @@
   [map-f xs]
   (reduce (fn f
             [aggregator new-val]
-            (conj aggregator (map-f new-val)))
-          (empty xs) xs))
-
+            (conj (vec aggregator) (map-f new-val)))
+          (empty xs) 
+          xs))
 
 
 (def arr [1 2 3])
 
 (map-using-reduce inc arr)
 
+(map-using-reduce inc '(1 2 3))
+
 (take 12 (repeat (str "first" " second")))
+
+
+;; filter using reduce
+
+(defn filter-using-reduce
+  [filter-fn xs]
+  (reduce ))
+
+
+(fn 
+  [aggregator new-val]
+  (if(filter-fn new-val)
+   (conj )))
 
 
 ;;lazy sequence

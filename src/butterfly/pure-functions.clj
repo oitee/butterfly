@@ -19,7 +19,7 @@
 ;; reducing function should look like this: f(aggregator, newElement) => return newElement(aggregator) 
 ;; aggregator should be the value of the last function over the `& args`
 
-(defn my-comp 
+(defn my-comp
   [& fns]
   (fn [& args]
     (let [val (apply (last fns) args)
@@ -32,5 +32,6 @@
 ((comp identity inc dec dec identity +) 100 10 1)
 
 ((my-comp identity inc dec dec identity +) 100 10 1)
-(= ((comp inc inc inc inc *) 100 2 2) ((my-comp inc inc inc inc *) 100 2 2)
-   )
+(= ((comp inc inc inc inc *) 100 2 2) ((my-comp inc inc inc inc *) 100 2 2))
+
+

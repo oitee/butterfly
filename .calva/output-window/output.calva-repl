@@ -4,158 +4,41 @@
 ; Please see https://calva.io/output/ for more info.
 ; Happy coding! ♥️
 
-; Aborting connect, error determining connect sequence.
-; Evaluating file: pure-functions.clj
-; Syntax error (ClassCastException) compiling at (pure-functions.clj:32:1).
-; Cannot cast clojure.lang.ArraySeq to java.lang.Number
-; Evaluation of file pure-functions.clj failed: class clojure.lang.Compiler$CompilerException
+; Jacking in...
+; Starting Jack-in Terminal: lein update-in :dependencies conj '[nrepl,"0.9.0"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.27.4"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- repl :headless
+; Hooking up nREPL sessions...
+; Connected session: clj
+; TIPS: 
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - Clojure lines in stack traces are peekable and clickable.
+clj꞉butterfly.core꞉>  ; Use `alt+enter` to evaluate
+; Jack-in done.
+clj꞉butterfly.core꞉> 
+; Evaluating file: sequence-abstraction.clj
+; Syntax error compiling at (sequence-abstraction.clj:67:6).
+; Unable to resolve symbol: filter-fn in this context
+; Evaluation of file sequence-abstraction.clj failed: class clojure.lang.Compiler$CompilerException
 
 clj꞉butterfly.core꞉> 
-clj꞉butterfly.pure-functions꞉> 
-#function[clojure.core/partial/fn--5826]
-clj꞉butterfly.pure-functions꞉> 
-; Execution error (ArityException) at butterfly.pure-functions/eval7512 (form-init12077719537331268996.clj:40).
-; Wrong number of args (3) passed to: clojure.core/inc
-clj꞉butterfly.pure-functions꞉> 
-; Execution error (ArityException) at butterfly.pure-functions/eval7514 (form-init12077719537331268996.clj:40).
-; Wrong number of args (5) passed to: clojure.core/inc
-clj꞉butterfly.pure-functions꞉> 
-#function[clojure.core/partial/fn--5826]
-clj꞉butterfly.pure-functions꞉> 
-; Execution error (ArityException) at butterfly.pure-functions/eval7518 (form-init12077719537331268996.clj:40).
-; Wrong number of args (5) passed to: clojure.core/inc
-clj꞉butterfly.pure-functions꞉> 
-#function[butterfly.pure-functions/eval7765/fn--7767]
-clj꞉butterfly.pure-functions꞉> 
-(2 3 4 5)
-nil
-clj꞉butterfly.pure-functions꞉> 
-#'butterfly.pure-functions/my-comp-v2
-clj꞉butterfly.pure-functions꞉> 
-#'butterfly.pure-functions/my-comp-v2
-clj꞉butterfly.pure-functions꞉> 
-112
-clj꞉butterfly.pure-functions꞉> 
-; Execution error (ClassCastException) at java.lang.Class/cast (Class.java:3889).
-; Cannot cast clojure.lang.ArraySeq to java.lang.Number
-clj꞉butterfly.pure-functions꞉> 
-#function[butterfly.pure-functions/my-comp-v2/fn--7786]
-clj꞉butterfly.pure-functions꞉> 
-#'butterfly.pure-functions/my-comp-v2
-clj꞉butterfly.pure-functions꞉> 
-(100 10 1)
-; Execution error (ClassCastException) at java.lang.Class/cast (Class.java:3889).
-; Cannot cast clojure.lang.ArraySeq to java.lang.Number
-clj꞉butterfly.pure-functions꞉> 
-#'butterfly.pure-functions/my-comp-v2
-clj꞉butterfly.pure-functions꞉> 
-(100 10 1)
-(#function[clojure.core/inc] #function[clojure.core/dec] #function[clojure.core/inc] #function[clojure.core/+])
-; Execution error (ClassCastException) at java.lang.Class/cast (Class.java:3889).
-; Cannot cast clojure.lang.ArraySeq to java.lang.Number
-clj꞉butterfly.pure-functions꞉> 
-; Execution error (ArityException) at butterfly.pure-functions/eval7811 (form-init12077719537331268996.clj:65).
-; Wrong number of args (1) passed to: clojure.core/apply
-clj꞉butterfly.pure-functions꞉> 
-10
-clj꞉butterfly.pure-functions꞉> 
-#'butterfly.pure-functions/my-comp-v2
-clj꞉butterfly.pure-functions꞉> 
-(100 10 1)
-(#function[clojure.core/inc] #function[clojure.core/dec] #function[clojure.core/inc] #function[clojure.core/+])
-111
-clj꞉butterfly.pure-functions꞉> 
-(100 10 1)
-(#function[clojure.core/inc] #function[clojure.core/dec] #function[clojure.core/+])
-111
-clj꞉butterfly.pure-functions꞉> 
-#function[butterfly.pure-functions/my-comp-v2/fn--7815]
-clj꞉butterfly.pure-functions꞉> 
-(100 10 1)
-(#function[clojure.core/inc] #function[clojure.core/dec] #function[clojure.core/+])
-111
-clj꞉butterfly.pure-functions꞉> 
-#function[butterfly.pure-functions/my-comp-v2/fn--7815]
-clj꞉butterfly.pure-functions꞉> 
-(100 10 1)
-(#function[clojure.core/inc] #function[clojure.core/+])
-112
-clj꞉butterfly.pure-functions꞉> 
-(100 10 1)
-(#function[clojure.core/inc] #function[clojure.core/inc] #function[clojure.core/+])
-113
-clj꞉butterfly.pure-functions꞉> 
-(100 10 1)
-(#function[clojure.core/inc] #function[clojure.core/inc] #function[clojure.core/inc] #function[clojure.core/+])
-113
-clj꞉butterfly.pure-functions꞉> 
-(100 10 1)
-(#function[clojure.core/dec] #function[clojure.core/inc] #function[clojure.core/inc] #function[clojure.core/inc] #function[clojure.core/+])
-111
-clj꞉butterfly.pure-functions꞉> 
-(100 10 1)
-(#function[clojure.core/dec] #function[clojure.core/+])
-110
-clj꞉butterfly.pure-functions꞉> 
-(100 10 1)
-(#function[clojure.core/str] #function[clojure.core/dec] #function[clojure.core/+])
-; Execution error (ClassCastException) at butterfly.pure-functions/my-comp-v2$fn$fn (form-init12077719537331268996.clj:53).
-; class java.lang.String cannot be cast to class java.lang.Number (java.lang.String and java.lang.Number are in module java.base of loader 'bootstrap')
-clj꞉butterfly.pure-functions꞉> 
-(100 10 1)
-(#function[clojure.core/dec] #function[clojure.core/dec] #function[clojure.core/+])
-109
-clj꞉butterfly.pure-functions꞉> 
-(100 10 1)
-(#function[clojure.core/inc] #function[clojure.core/dec] #function[clojure.core/dec] #function[clojure.core/+])
-111
-clj꞉butterfly.pure-functions꞉> 
-(100 10 1)
-(#function[clojure.core/identity] #function[clojure.core/inc] #function[clojure.core/dec] #function[clojure.core/dec] #function[clojure.core/+])
-112
-clj꞉butterfly.pure-functions꞉> 
-(100 10 1)
-(#function[clojure.core/identity] #function[clojure.core/inc] #function[clojure.core/dec] #function[clojure.core/dec] #function[clojure.core/identity] #function[clojure.core/+])
-112
-clj꞉butterfly.pure-functions꞉> 
-101
-clj꞉butterfly.pure-functions꞉> 
-#'butterfly.pure-functions/reducer
-clj꞉butterfly.pure-functions꞉> 
-nil
-clj꞉butterfly.pure-functions꞉> 
-#'butterfly.pure-functions/reducer
-clj꞉butterfly.pure-functions꞉> 
-nil
-nil
-nil
-nil
-nil
-clj꞉butterfly.pure-functions꞉> 
-#'butterfly.pure-functions/my-comp-v2
-clj꞉butterfly.pure-functions꞉> 
-110
-clj꞉butterfly.pure-functions꞉> 
-; Execution error (ClassCastException) at java.lang.Class/cast (Class.java:3889).
-; Cannot cast clojure.lang.PersistentVector to java.lang.Number
-clj꞉butterfly.pure-functions꞉> 
-; Execution error (ClassCastException) at java.lang.Class/cast (Class.java:3889).
-; Cannot cast clojure.lang.PersistentVector to java.lang.Number
-clj꞉butterfly.pure-functions꞉> 
-true
-clj꞉butterfly.pure-functions꞉> 
-; Execution error (ClassCastException) at java.lang.Class/cast (Class.java:3889).
-; Cannot cast clojure.lang.ArraySeq to java.lang.Number
-clj꞉butterfly.pure-functions꞉> 
-#'butterfly.pure-functions/my-comp
-clj꞉butterfly.pure-functions꞉> 
-112
-clj꞉butterfly.pure-functions꞉> 
-110
-clj꞉butterfly.pure-functions꞉> 
-110
-clj꞉butterfly.pure-functions꞉> 
-110
-clj꞉butterfly.pure-functions꞉> 
-true
-clj꞉butterfly.pure-functions꞉> 
+clj꞉butterfly.sequence-abstraction꞉> 
+#'butterfly.sequence-abstraction/map-using-reduce
+clj꞉butterfly.sequence-abstraction꞉> 
+[2 3 4]
+clj꞉butterfly.sequence-abstraction꞉> 
+; Execution error (ClassCastException) at butterfly.sequence-abstraction/eval7802 (form-init474683499762161802.clj:55).
+; class java.lang.Long cannot be cast to class clojure.lang.IFn (java.lang.Long is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉butterfly.sequence-abstraction꞉> 
+(4 3 2)
+clj꞉butterfly.sequence-abstraction꞉> 
+#'butterfly.sequence-abstraction/map-using-reduce
+clj꞉butterfly.sequence-abstraction꞉> 
+#'butterfly.sequence-abstraction/arr
+clj꞉butterfly.sequence-abstraction꞉> 
+[2 3 4]
+clj꞉butterfly.sequence-abstraction꞉> 
+[2 3 4]
+clj꞉butterfly.sequence-abstraction꞉> 
