@@ -26,3 +26,4 @@ pom.xml.asc
 .hg/
 .clj-kondo
 .lsp
+.calva
