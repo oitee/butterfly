@@ -1,5 +1,5 @@
 ; This is the Calva evaluation results output window.
-; TIPS: The keyboard shortcut `ctrl+alt+c o` shows and focuses this window
+; TIPS: The keyboard shortcut `ctrl+alt+o o` shows and focuses this window
 ;   when connected to a REPL session.
 ; Please see https://calva.io/output/ for more info.
 ; Happy coding! ♥️
@@ -8,7 +8,7 @@
 ; Starting Jack-in Terminal: lein update-in :dependencies conj '[nrepl,"0.9.0"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.27.4"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- repl :headless
 ; Hooking up nREPL sessions...
 ; Connected session: clj
-; TIPS: 
+; TIPS:
 ;   - You can edit the contents here. Use it as a REPL if you like.
 ;   - `alt+enter` evaluates the current top level form.
 ;   - `ctrl+enter` evaluates the current form.
@@ -18,93 +18,85 @@
 clj꞉butterfly.core꞉>  ; Use `alt+enter` to evaluate
 ; Jack-in done.
 clj꞉butterfly.core꞉> 
-; Evaluating file: sequence-abstraction.clj
-; Syntax error compiling at (sequence-abstraction.clj:67:6).
-; Unable to resolve symbol: filter-fn in this context
-; Evaluation of file sequence-abstraction.clj failed: class clojure.lang.Compiler$CompilerException
-
-clj꞉butterfly.core꞉> 
-clj꞉butterfly.sequence-abstraction꞉> 
-#'butterfly.sequence-abstraction/map-using-reduce
-clj꞉butterfly.sequence-abstraction꞉> 
-[2 3 4]
-clj꞉butterfly.sequence-abstraction꞉> 
-; Execution error (ClassCastException) at butterfly.sequence-abstraction/eval7802 (form-init474683499762161802.clj:55).
-; class java.lang.Long cannot be cast to class clojure.lang.IFn (java.lang.Long is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
-clj꞉butterfly.sequence-abstraction꞉> 
-(4 3 2)
-clj꞉butterfly.sequence-abstraction꞉> 
-#'butterfly.sequence-abstraction/map-using-reduce
-clj꞉butterfly.sequence-abstraction꞉> 
-#'butterfly.sequence-abstraction/arr
-clj꞉butterfly.sequence-abstraction꞉> 
-[2 3 4]
-clj꞉butterfly.sequence-abstraction꞉> 
-[2 3 4]
-clj꞉butterfly.sequence-abstraction꞉> 
-#'butterfly.sequence-abstraction/map-using-reduce
-clj꞉butterfly.sequence-abstraction꞉> 
-#'butterfly.sequence-abstraction/arr
-clj꞉butterfly.sequence-abstraction꞉> 
-[2 3 4]
-clj꞉butterfly.sequence-abstraction꞉> 
-(4 2 3)
-clj꞉butterfly.sequence-abstraction꞉> 
-#'butterfly.sequence-abstraction/map-using-reduce
-clj꞉butterfly.sequence-abstraction꞉> 
-[2 3 4]
-clj꞉butterfly.sequence-abstraction꞉> 
-[2 3 4]
-clj꞉butterfly.sequence-abstraction꞉> 
-(2 3 4)
-clj꞉butterfly.sequence-abstraction꞉> 
-#'butterfly.sequence-abstraction/map-using-reduce
-clj꞉butterfly.sequence-abstraction꞉> 
-(2 3 4)
-clj꞉butterfly.sequence-abstraction꞉> 
-(2 3 4)
-clj꞉butterfly.sequence-abstraction꞉> 
-; Syntax error compiling at (sequence-abstraction.clj:69:6).
-; Unable to resolve symbol: filter-fn in this context
-clj꞉butterfly.sequence-abstraction꞉> 
-#'butterfly.sequence-abstraction/filter-using-reduce
-clj꞉butterfly.sequence-abstraction꞉> 
-[0 2 4 6 8]
-clj꞉butterfly.sequence-abstraction꞉> 
-[0 2 4 6 8]
-clj꞉butterfly.sequence-abstraction꞉> 
-#'butterfly.sequence-abstraction/filter-using-reduce
-clj꞉butterfly.sequence-abstraction꞉> 
-(0 2 4 6 8)
-clj꞉butterfly.sequence-abstraction꞉> 
-(0 2 4 6 8)
-clj꞉butterfly.sequence-abstraction꞉> 
+; Evaluating file: basic_key_words.clj
+; WARNING: num already refers to: #'clojure.core/num in namespace: butterfly.basic-key-words, being replaced by: #'butterfly.basic-key-words/num
+When True!
+"Otee"
+clj꞉butterfly.basic-key-words꞉> 
+; Syntax error compiling at (macro_and_name_space.clj:24:1).
+; Unable to resolve symbol: infix in this context
+clj꞉butterfly.macro-and-name-space꞉> 
+; Evaluating file: macro_and_name_space.clj
+; Syntax error compiling var at (macro_and_name_space.clj:5:1).
+; Unable to resolve var: butterfly.sequence-abstraction/arr in this context
+; Evaluation of file macro_and_name_space.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7114)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$InvokeExpr/parse (Compiler.java:3888)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7108)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6120)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5467)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4029)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7104)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/eval (Compiler.java:7173)
+clojure.lang.Compiler/load (Compiler.java:7635)
+butterfly.macro-and-name-space/eval7868 (form-init17547477054698404560.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:833)
+clj꞉butterfly.macro-and-name-space꞉> 
+; Syntax error compiling at (macro_and_name_space.clj:24:1).
+; Unable to resolve symbol: infix in this context
+clj꞉butterfly.macro-and-name-space꞉> 
+#'butterfly.macro-and-name-space/infix
+clj꞉butterfly.macro-and-name-space꞉> 
+; Syntax error compiling at (macro_and_name_space.clj:24:1).
+; Unable to resolve symbol: quote in this context
+clj꞉butterfly.macro-and-name-space꞉> 
+2
+clj꞉butterfly.macro-and-name-space꞉> 
+#'butterfly.macro-and-name-space/infix
+clj꞉butterfly.macro-and-name-space꞉> 
+(1 + 2 + 3)
+; Syntax error compiling at (macro_and_name_space.clj:26:1).
+; Unable to resolve symbol: quote in this context
+clj꞉butterfly.macro-and-name-space꞉> 
++
+4
+clj꞉butterfly.macro-and-name-space꞉> 
++
+3
+clj꞉butterfly.macro-and-name-space꞉> 
+; Execution error (ArityException) at butterfly.macro-and-name-space/eval7904 (form-init17547477054698404560.clj:28).
+; Wrong number of args (0) passed to: clojure.core/macroexpand-1
+clj꞉butterfly.macro-and-name-space꞉> 
+-1
+clj꞉butterfly.macro-and-name-space꞉> 
+2
+clj꞉butterfly.basic-key-words꞉> 
+2
+clj꞉butterfly.basic-key-words꞉> 
+1
+clj꞉butterfly.basic-key-words꞉> 
+3
+clj꞉butterfly.basic-key-words꞉> 
 nil
-clj꞉butterfly.functions-primer꞉> 
-; Syntax error compiling at (sequence-abstraction.clj:77:1).
-; Unable to resolve symbol: even?' in this context
-clj꞉butterfly.sequence-abstraction꞉> 
-true
-clj꞉butterfly.sequence-abstraction꞉> 
-true
-nil
-clj꞉butterfly.sequence-abstraction꞉> 
-true
-nil
-clj꞉butterfly.sequence-abstraction꞉> 
-false
-nil
-clj꞉butterfly.sequence-abstraction꞉> 
-#'butterfly.sequence-abstraction/some-using-reduce
-clj꞉butterfly.sequence-abstraction꞉> 
-nil
-clj꞉butterfly.sequence-abstraction꞉> 
-; Execution error (IllegalArgumentException) at butterfly.sequence-abstraction/some-using-reduce (form-init474683499762161802.clj:78).
-; Don't know how to create ISeq from: java.lang.Boolean
-clj꞉butterfly.sequence-abstraction꞉> 
-#'butterfly.sequence-abstraction/some-using-reduce
-clj꞉butterfly.sequence-abstraction꞉> 
-nil
-clj꞉butterfly.sequence-abstraction꞉> 
-true
-clj꞉butterfly.sequence-abstraction꞉> 
+clj꞉butterfly.basic-key-words꞉> 
+; Error printing return value (ClassCastException) at clojure.lang.Numbers/isPos (Numbers.java:121).
+; class clojure.lang.PersistentVector cannot be cast to class java.lang.Number (clojure.lang.PersistentVector is in unnamed module of loader 'app'; java.lang.Number is in module java.base of loader 'bootstrap')
+clj꞉butterfly.basic-key-words꞉> 
